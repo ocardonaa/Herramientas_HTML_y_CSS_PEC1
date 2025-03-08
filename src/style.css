@@ -63,12 +63,36 @@ nav.menu-navigation {
     padding: 0; }
 
 /* carta.html code */
+div.dish-card {
+  background-color: white;
+  border-radius: 5%; }
+
+div.dish-and-price {
+  display: flex;
+  justify-content: space-between; }
+  div.dish-and-price p.dish-text {
+    font-size: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em; }
+
 /* for smartphone */
 @media screen and (max-width: 399px) {
   /* index page and general configuration */
   ul.nav-ul {
     display: block;
-    text-align: center; } }
+    text-align: center; }
+
+  /* carta.html */
+  div.menu-food-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  img.dishes-img {
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%; } }
 /* for tablet */
 @media screen and (min-width: 400px) and (max-width: 799px) {
   /* index page and general configuration */
@@ -81,7 +105,9 @@ nav.menu-navigation {
     content: " | ";
     font-weight: 900;
     padding-right: 5px;
-    color: #930101; } }
+    color: #930101; }
+
+  /* carta.html */ }
 /* for desktop */
 @media screen and (min-width: 800px) {
   /* index page and general configuration */

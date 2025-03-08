@@ -38,6 +38,11 @@ $secondary-color: #F2DFCA;
     }
 }
 
+@mixin top-borders {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
 /* general and index.html code */
 
 * {
@@ -106,6 +111,21 @@ nav.menu-navigation {
 
 /* carta.html code */
 
+div.dish-card {
+    background-color: white;
+    border-radius: 5%;
+}
+
+div.dish-and-price {
+    display: flex;
+    justify-content: space-between;
+    p.dish-text {
+        font-size: 0.8em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
 /* for smartphone */
 @media screen and (max-width: 399px) {
 
@@ -113,6 +133,18 @@ nav.menu-navigation {
 
     ul.nav-ul {
         @include centered-text();
+    }
+
+    /* carta.html */
+
+    div.menu-food-container {
+        @include centered-object();
+    }
+
+    img.dishes-img {
+        width: 300px;
+        height: 300px;
+        @include top-borders();
     }
 
 }
@@ -129,6 +161,10 @@ nav.menu-navigation {
     ul.nav-ul li:not(:last-child)::after {
         @include navigation-menu-one-line();
     }
+
+    /* carta.html */
+
+    
 }
 
 /* for desktop */

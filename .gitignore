@@ -1,6 +1,8 @@
 *.log
 *.json
+.sass-cache/
 dist/
 node_modules/
 .parcel-cache/
 postcss.config.js
+style.css.map
