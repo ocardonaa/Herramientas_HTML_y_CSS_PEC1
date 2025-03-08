@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+/*preprocessor 1: variables */
+/* general and index code */
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Playwrite IT Moderna', cursive;
+  font-weight: 400;
+  background: linear-gradient(to bottom, #F2DFCA, #fff);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%; }
+
+header {
+  background-color: #F2DFCA; }
+
+/*preprocessor 2: mixins */
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #930101;
+  margin-top: 0;
+  padding-top: 1em; }
+
+h2 {
+  display: block;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #930101; }
+
+/*preprocessor 3: nesting */
+nav.menu-navigation {
+  padding-bottom: 1em; }
+  nav.menu-navigation ul.nav-ul {
+    list-style-type: none;
+    padding: 0; }
+  nav.menu-navigation li.nav-li:hover {
+    color: #930101; }
+
+/* for smartphone */
+@media screen and (max-width: 399px) {
+  /* index page and general configuration */
+  ul.nav-ul {
+    display: block;
+    text-align: center; } }
+/* for tablet */
+@media screen and (min-width: 400px) and (max-width: 799px) {
+  /* index page and general configuration */
+  ul.nav-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  ul.nav-ul li:not(:last-child)::after {
+    content: " | ";
+    font-weight: 900;
+    padding-right: 5px;
+    color: #930101; } }
+/* for desktop */
+@media screen and (min-width: 800px) {
+  /* index page and general configuration */
+  ul.nav-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  ul.nav-ul li:not(:last-child)::after {
+    content: " | ";
+    font-weight: 900;
+    padding-right: 5px;
+    color: #930101; } }
+
+/*# sourceMappingURL=style.css.map */

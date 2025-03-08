@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+/*preprocessor 1: variables */
+$primary-color: #930101;
+$secondary-color: #F2DFCA;
+
+/* general and index code */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playwrite IT Moderna', cursive;
+    font-weight: 400;
+    background: linear-gradient(to bottom, $secondary-color, #fff);;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    background-color: $secondary-color;
+}
+
+/*preprocessor 2: mixins */
+@mixin centered-object {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    @include centered-object();
+    color: $primary-color;
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+@mixin centered-text {
+    display: block;
+    text-align: center;
+}
+
+h2 {
+    @include centered-text();
+    padding-left: 10%;
+    padding-right: 10%;
+    color: $primary-color;
+}
+
+/*preprocessor 3: nesting */
+nav.menu-navigation {
+    padding-bottom: 1em;
+
+    ul.nav-ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    li.nav-li:hover {
+        color: $primary-color;
+    }
+}
+
+@mixin navigation-menu-one-line {
+    content: " | ";
+    font-weight: 900;
+    padding-right: 5px;
+    color: $primary-color;
+}
+
+/* for smartphone */
+@media screen and (max-width: 399px) {
+
+    /* index page and general configuration */
+
+    ul.nav-ul {
+        @include centered-text();
+    }
+
+}
+
+/* for tablet */
+@media screen and  (min-width: 400px) and (max-width: 799px){
+
+    /* index page and general configuration */
+    
+    ul.nav-ul {
+        @include centered-object();
+    }
+    
+    ul.nav-ul li:not(:last-child)::after {
+        @include navigation-menu-one-line();
+    }
+}
+
+/* for desktop */
+@media screen and (min-width: 800px) {
+
+    /* index page and general configuration */
+    
+    ul.nav-ul {
+        @include centered-object();
+    }
+
+    ul.nav-ul li:not(:last-child)::after {
+        @include navigation-menu-one-line();
+    }
+}
