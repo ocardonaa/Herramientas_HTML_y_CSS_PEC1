@@ -43,6 +43,16 @@ $secondary-color: #F2DFCA;
     border-top-right-radius: 5%;
 }
 
+@mixin padding-percent($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin margin-percent($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+}
+
 /* general and index.html code */
 
 * {
@@ -52,7 +62,8 @@ $secondary-color: #F2DFCA;
 body {
     font-family: 'Playwrite IT Moderna', cursive;
     font-weight: 400;
-    background: linear-gradient(to bottom, $secondary-color, #fff);;
+    background: linear-gradient(to bottom, $secondary-color, #fff);
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -82,8 +93,7 @@ h1 {
 
 h2 {
     @include centered-text();
-    padding-left: 10%;
-    padding-right: 10%;
+    @include padding-percent(10%, 10%);
     color: $primary-color;
 }
 
@@ -112,8 +122,11 @@ nav.menu-navigation {
 /* carta.html code */
 
 div.dish-card {
-    background-color: white;
+    background-color: $primary-color;
+    color: white;
     border-radius: 5%;
+    margin-bottom: 1em;
+    @include margin-percent(10%, 10%);
 }
 
 div.dish-and-price {
@@ -124,6 +137,12 @@ div.dish-and-price {
         padding-left: 1em;
         padding-right: 1em;
     }
+}
+
+img.dishes-img {
+    @include top-borders();
+    aspect-ratio: 1/1;
+    width: 100%;
 }
 
 /* for smartphone */
@@ -139,18 +158,13 @@ div.dish-and-price {
 
     div.menu-food-container {
         @include centered-object();
-    }
-
-    img.dishes-img {
-        width: 300px;
-        height: 300px;
-        @include top-borders();
+        flex-direction: column;
     }
 
 }
 
 /* for tablet */
-@media screen and  (min-width: 400px) and (max-width: 799px){
+@media screen and (min-width: 400px) and (max-width: 799px){
 
     /* index page and general configuration */
     
@@ -164,6 +178,10 @@ div.dish-and-price {
 
     /* carta.html */
 
+    div.menu-food-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     
 }
 
@@ -178,5 +196,12 @@ div.dish-and-price {
 
     ul.nav-ul li:not(:last-child)::after {
         @include navigation-menu-one-line();
+    }
+
+    /* carta.html */
+
+    div.menu-food-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
