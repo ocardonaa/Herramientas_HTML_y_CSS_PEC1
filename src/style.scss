@@ -4,7 +4,41 @@
 $primary-color: #930101;
 $secondary-color: #F2DFCA;
 
-/* general and index code */
+/*preprocessor 2: mixins */
+/* mixins to optimize zone */
+
+@mixin centered-object {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin navigation-menu-one-line {
+    content: " | ";
+    font-weight: 900;
+    padding-right: 5px;
+    color: $primary-color;
+}
+
+@mixin centered-text {
+    display: block;
+    text-align: center;
+}
+
+@mixin menu-links {
+    & {
+        &:link,
+        &:visited {
+            color: black;
+            text-decoration: none;
+        }
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+/* general and index.html code */
 
 * {
     box-sizing: border-box;
@@ -18,17 +52,20 @@ body {
     padding: 0;
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 header {
     background-color: $secondary-color;
 }
 
-/*preprocessor 2: mixins */
-@mixin centered-object {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer {
+    background-color: $primary-color;
 }
 
 h1 {
@@ -38,11 +75,6 @@ h1 {
     padding-top: 1em;
 }
 
-@mixin centered-text {
-    display: block;
-    text-align: center;
-}
-
 h2 {
     @include centered-text();
     padding-left: 10%;
@@ -50,22 +82,19 @@ h2 {
     color: $primary-color;
 }
 
-/*preprocessor 3: nesting */
-
-@mixin menu-links {
-    & {
-        &:link,
-        &:visited {
-            color: black;
-            text-decoration: none;
-        }
-    }
+span.my-name {
+    color: white;
+    font-size: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    @include centered-text();
 }
 
 a.menu-link {
     @include menu-links();
 }
 
+/*preprocessor 3: nesting */
 nav.menu-navigation {
     padding-bottom: 1em;
 
@@ -73,18 +102,9 @@ nav.menu-navigation {
         list-style-type: none;
         padding: 0;
     }
-    
-    li.nav-li:hover {
-        color: $primary-color;
-    }
 }
 
-@mixin navigation-menu-one-line {
-    content: " | ";
-    font-weight: 900;
-    padding-right: 5px;
-    color: $primary-color;
-}
+/* carta.html code */
 
 /* for smartphone */
 @media screen and (max-width: 399px) {
