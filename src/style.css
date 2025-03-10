@@ -7,9 +7,9 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Playwrite IT Moderna', cursive;
+  font-family: "Playwrite IT Moderna", cursive;
   font-weight: 400;
-  background: linear-gradient(to bottom, #F2DFCA, #fff);
+  background: linear-gradient(to bottom, #f2dfca, #fff);
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
@@ -19,10 +19,12 @@ body {
   flex-direction: column; }
 
 main {
-  flex: 1; }
+  flex: 1;
+  padding-left: 10%;
+  padding-right: 10%; }
 
 header {
-  background-color: #F2DFCA; }
+  background-color: #f2dfca; }
 
 footer {
   background-color: #930101; }
@@ -38,8 +40,6 @@ h1 {
 h2 {
   display: block;
   text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
   color: #930101; }
 
 span.my-name {
@@ -71,9 +71,7 @@ div.dish-card {
   background-color: #930101;
   color: white;
   border-radius: 5%;
-  margin-bottom: 1em;
-  margin-left: 10%;
-  margin-right: 10%; }
+  margin-bottom: 1em; }
 
 div.dish-and-price {
   display: flex;
@@ -97,6 +95,7 @@ label {
 input {
   border: 1px solid white;
   height: 2em;
+  width: 100%;
   display: block; }
 
 textarea {
@@ -142,17 +141,7 @@ form {
     align-items: center;
     flex-direction: column; }
 
-  /* contacto.html */
-  input {
-    width: 100%; }
-
-  form {
-    margin-left: 10%;
-    margin-right: 10%; }
-
-  p.contact-text {
-    margin-left: 10%;
-    margin-right: 10%; } }
+  /* contacto.html */ }
 /* for tablet */
 @media screen and (min-width: 400px) and (max-width: 799px) {
   /* index page and general configuration */
@@ -170,7 +159,11 @@ form {
   /* carta.html */
   div.menu-food-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+
+  div.dish-card {
+    margin-left: 5%;
+    margin-right: 5%; } }
 /* for desktop */
 @media screen and (min-width: 800px) {
   /* index page and general configuration */
@@ -188,6 +181,10 @@ form {
   /* carta.html */
   div.menu-food-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+
+  div.dish-card {
+    margin-left: 5%;
+    margin-right: 5%; } }
 
 /*# sourceMappingURL=style.css.map */

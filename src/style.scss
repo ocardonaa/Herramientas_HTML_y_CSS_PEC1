@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap");
 
 /*preprocessor 1: variables */
 $primary-color: #930101;
-$secondary-color: #F2DFCA;
+$secondary-color: #f2dfca;
 
 /*preprocessor 2: mixins */
 /* mixins to optimize zone */
@@ -27,11 +27,13 @@ $secondary-color: #F2DFCA;
 
 @mixin menu-links {
     & {
+
         &:link,
         &:visited {
             color: black;
             text-decoration: none;
         }
+
         &:hover {
             color: $primary-color;
         }
@@ -40,6 +42,7 @@ $secondary-color: #F2DFCA;
 
 @mixin contact-links {
     & {
+
         &:link,
         &:visited {
             color: $primary-color;
@@ -70,7 +73,7 @@ $secondary-color: #F2DFCA;
 }
 
 body {
-    font-family: 'Playwrite IT Moderna', cursive;
+    font-family: "Playwrite IT Moderna", cursive;
     font-weight: 400;
     background: linear-gradient(to bottom, $secondary-color, #fff);
     background-repeat: no-repeat;
@@ -84,6 +87,7 @@ body {
 
 main {
     flex: 1;
+    @include padding-percent(10%, 10%)
 }
 
 header {
@@ -103,7 +107,6 @@ h1 {
 
 h2 {
     @include centered-text();
-    @include padding-percent(10%, 10%);
     color: $primary-color;
 }
 
@@ -120,6 +123,7 @@ a {
         &.email-contact {
             @include contact-links();
         }
+
         &.menu-link {
             @include menu-links();
         }
@@ -143,12 +147,12 @@ div.dish-card {
     color: white;
     border-radius: 5%;
     margin-bottom: 1em;
-    @include margin-percent(10%, 10%);
 }
 
 div.dish-and-price {
     display: flex;
     justify-content: space-between;
+
     p.dish-text {
         font-size: 0.8em;
         padding-left: 1em;
@@ -172,6 +176,7 @@ label {
 input {
     border: 1px solid white;
     height: 2em;
+    width: 100%;
     display: block;
 }
 
@@ -212,7 +217,6 @@ form {
 
 /* for smartphone */
 @media screen and (max-width: 399px) {
-
     /* index page and general configuration */
 
     ul.nav-ul {
@@ -227,29 +231,16 @@ form {
     }
 
     /* contacto.html */
-
-    input {
-        width: 100%;
-    }
-
-    form {
-        @include margin-percent(10%, 10%);
-    }
-
-    p.contact-text {
-        @include margin-percent(10%, 10%);
-    }
 }
 
 /* for tablet */
-@media screen and (min-width: 400px) and (max-width: 799px){
-
+@media screen and (min-width: 400px) and (max-width: 799px) {
     /* index page and general configuration */
-    
+
     ul.nav-ul {
         @include centered-object();
     }
-    
+
     ul.nav-ul li:not(:last-child)::after {
         @include navigation-menu-one-line();
     }
@@ -260,14 +251,16 @@ form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
+    div.dish-card {
+        @include margin-percent(5%, 5%);
+    }
 }
 
 /* for desktop */
 @media screen and (min-width: 800px) {
-
     /* index page and general configuration */
-    
+
     ul.nav-ul {
         @include centered-object();
     }
@@ -281,5 +274,9 @@ form {
     div.menu-food-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    div.dish-card {
+        @include margin-percent(5%, 5%);
     }
 }
