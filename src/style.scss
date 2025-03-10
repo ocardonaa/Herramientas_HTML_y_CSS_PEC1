@@ -115,8 +115,15 @@ span.my-name {
     @include centered-text();
 }
 
-a.menu-link {
-    @include menu-links();
+a {
+    & {
+        &.email-contact {
+            @include contact-links();
+        }
+        &.menu-link {
+            @include menu-links();
+        }
+    }
 }
 
 /*preprocessor 3: nesting */
@@ -159,14 +166,13 @@ img.dishes-img {
 
 label {
     display: block;
-    margin-bottom: 0.1em;
+    margin-bottom: 0.3em;
 }
 
 input {
     border: 1px solid white;
     height: 2em;
     display: block;
-    margin-bottom: 1em;
 }
 
 textarea {
@@ -181,8 +187,27 @@ span.contact-info {
     font-style: italic;
 }
 
-a.email-contact {
-    @include contact-links();
+small {
+    color: red;
+}
+
+small.confirmation-message {
+    color: black;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+button {
+    color: white;
+    background-color: $primary-color;
+    height: 2em;
+    float: inline-end;
+    border-radius: 10%;
+    border: 1px solid $primary-color;
+}
+
+form {
+    margin-bottom: 3em;
 }
 
 /* for smartphone */

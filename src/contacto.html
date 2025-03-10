@@ -22,13 +22,18 @@
         <h2>
             Tienes alguna sugerencia o quieres reservar mesa?
         </h2>
-        <form>
+        <form id="form">
             <label for="username">Nombre:</label>
-            <input type="text" id="username" name="username">
+            <input type="text" id="username" name="nombre" maxlength="50">
+            <small></small>
             <label for="email">Email:</label>
             <input type="email" name="email" id="email">
+            <small></small>
             <label for="message">Sugerencia:</label>
-            <textarea name="message" id="message"></textarea>
+            <textarea name="mensaje" id="message" maxlength="1000"></textarea>
+            <small></small>
+            <button type="submit">Enviar</button>
+            <small id="confirmed-feedback" class="confirmation-message"></small>
         </form>
         <p class="contact-text">Si quieres hacer una reserva puedes llamar al <span class="contact-info">+34123456789</span> o enviarnos un email a <span class="contact-info"><a class="email-contact" href="mailto: la.napolitana@gmail.com">la.napolitana@gmail.com</a></span></p>
     </main>
