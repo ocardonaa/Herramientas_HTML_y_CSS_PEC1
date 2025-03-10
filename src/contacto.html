@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>La Napolitana</h1>
+        <nav class="menu-navigation">
+            <ul class="nav-ul">
+                <li class="nav-li"><a class="menu-link" href="index.html">Inicio</a></li>
+                <li class="nav-li"><a class="menu-link" href="historia.html">Nuestra Historia</a></li>
+                <li class="nav-li"><a class="menu-link" href="carta.html">Carta</a></li>
+                <li class="nav-li"><a class="menu-link" href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>
+            Tienes alguna sugerencia o quieres reservar mesa?
+        </h2>
+        <form>
+            <label for="username">Nombre:</label>
+            <input type="text" id="username" name="username">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="message">Sugerencia:</label>
+            <textarea name="message" id="message"></textarea>
+        </form>
+        <p class="contact-text">Si quieres hacer una reserva puedes llamar al <span class="contact-info">+34123456789</span> o enviarnos un email a <span class="contact-info"><a class="email-contact" href="mailto: la.napolitana@gmail.com">la.napolitana@gmail.com</a></span></p>
+    </main>
+    <footer>
+        <span class="my-name">Oriol Cardona Alsina</span>
+    </footer>
+    <script src="form-validator.js"></script>
 </body>
 </html>

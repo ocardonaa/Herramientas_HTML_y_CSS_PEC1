@@ -38,6 +38,16 @@ $secondary-color: #F2DFCA;
     }
 }
 
+@mixin contact-links {
+    & {
+        &:link,
+        &:visited {
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+}
+
 @mixin top-borders {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
@@ -145,6 +155,36 @@ img.dishes-img {
     width: 100%;
 }
 
+/* contacto.html code */
+
+label {
+    display: block;
+    margin-bottom: 0.1em;
+}
+
+input {
+    border: 1px solid white;
+    height: 2em;
+    display: block;
+    margin-bottom: 1em;
+}
+
+textarea {
+    height: 10em;
+    width: 100%;
+    resize: both;
+    border: 1px solid white;
+}
+
+span.contact-info {
+    color: $primary-color;
+    font-style: italic;
+}
+
+a.email-contact {
+    @include contact-links();
+}
+
 /* for smartphone */
 @media screen and (max-width: 399px) {
 
@@ -161,6 +201,19 @@ img.dishes-img {
         flex-direction: column;
     }
 
+    /* contacto.html */
+
+    input {
+        width: 100%;
+    }
+
+    form {
+        @include margin-percent(10%, 10%);
+    }
+
+    p.contact-text {
+        @include margin-percent(10%, 10%);
+    }
 }
 
 /* for tablet */
