@@ -226,6 +226,25 @@ div.main-history-container {
     flex-direction: column;
 }
 
+figure {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    iframe {
+        border: none;
+        width: 100%;
+    }
+
+    figcaption {
+        font-size: 0.7em;
+    }
+}
+
+div.video-div {
+    margin-bottom: 2em;
+}
+
 /* for smartphone */
 @media screen and (max-width: 399px) {
     /* index page and general configuration */
@@ -246,6 +265,10 @@ div.main-history-container {
     img.places-img {
         width: 100%;
         height: auto;
+    }
+
+    iframe {
+        height: calc(100vw/2.1);
     }
 }
 
@@ -283,11 +306,19 @@ div.main-history-container {
     p.history-paragraf {
         font-size: 1em;
     }
+
+    iframe {
+        height: calc(100vw/2);
+    }
 }
 
 /* for desktop */
 @media screen and (min-width: 800px) {
     /* index page and general configuration */
+
+    main {
+        @include padding-percent(25%, 25%)
+    }
 
     ul.nav-ul {
         @include centered-object();
@@ -339,5 +370,9 @@ div.main-history-container {
         height: auto;
         object-fit: cover;
         margin-top: 2em;
+    }
+
+    iframe {
+        height: calc(100vw/3.5);
     }
 }

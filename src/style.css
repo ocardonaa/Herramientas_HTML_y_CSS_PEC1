@@ -134,6 +134,19 @@ div.main-history-container {
   display: flex;
   flex-direction: column; }
 
+figure {
+  margin: 0;
+  padding: 0;
+  position: relative; }
+  figure iframe {
+    border: none;
+    width: 100%; }
+  figure figcaption {
+    font-size: 0.7em; }
+
+div.video-div {
+  margin-bottom: 2em; }
+
 /* for smartphone */
 @media screen and (max-width: 399px) {
   /* index page and general configuration */
@@ -151,7 +164,10 @@ div.main-history-container {
   /* historia.html */
   img.places-img {
     width: 100%;
-    height: auto; } }
+    height: auto; }
+
+  iframe {
+    height: calc(100vw/2.1); } }
 /* for tablet */
 @media screen and (min-width: 400px) and (max-width: 799px) {
   /* index page and general configuration */
@@ -182,10 +198,17 @@ div.main-history-container {
     object-fit: cover; }
 
   p.history-paragraf {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  iframe {
+    height: calc(100vw/2); } }
 /* for desktop */
 @media screen and (min-width: 800px) {
   /* index page and general configuration */
+  main {
+    padding-left: 25%;
+    padding-right: 25%; }
+
   ul.nav-ul {
     display: flex;
     justify-content: center;
@@ -228,6 +251,9 @@ div.main-history-container {
     width: 50%;
     height: auto;
     object-fit: cover;
-    margin-top: 2em; } }
+    margin-top: 2em; }
+
+  iframe {
+    height: calc(100vw/3.5); } }
 
 /*# sourceMappingURL=style.css.map */
