@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap");
 /*preprocessor 1: variables */
 /*preprocessor 2: mixins */
@@ -20,9 +19,7 @@ body {
   flex-direction: column; }
 
 main {
-  flex: 1;
-  padding-left: 10%;
-  padding-right: 10%; }
+  flex: 1; }
 
 header {
   background-color: #f2dfca; }
@@ -45,9 +42,6 @@ h2 {
 
 span.my-name {
   color: white;
-  font-size: 0.5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
   display: block;
   text-align: center; }
 span.contact-info {
@@ -87,10 +81,6 @@ div.dish-card {
 div.dish-and-price {
   display: flex;
   justify-content: space-between; }
-  div.dish-and-price p.dish-text {
-    font-size: 0.8em;
-    padding-left: 1em;
-    padding-right: 1em; }
 
 img.dishes-img {
   border-top-left-radius: 5%;
@@ -99,45 +89,38 @@ img.dishes-img {
   width: 100%; }
 
 /* contacto.html code */
-label {
-  display: block;
-  margin-bottom: 0.3em; }
-
-input {
-  border: 1px solid white;
-  height: 2em;
-  width: 100%;
-  display: block; }
-
-textarea {
-  height: 10em;
-  width: 100%;
-  resize: both;
-  border: 1px solid white; }
-
-small {
-  color: red; }
-
-small.confirmation-message {
-  color: black;
-  margin-bottom: 0;
-  padding-bottom: 0; }
-
-button {
-  color: white;
-  background-color: #930101;
-  height: 2em;
-  float: inline-end;
-  border-radius: 10%;
-  border: 1px solid #930101; }
-
 form {
   margin-bottom: 3em; }
+  form label {
+    display: block;
+    margin-bottom: 0.3em; }
+  form input {
+    border: 1px solid white;
+    height: 2em;
+    width: 100%;
+    display: block; }
+  form textarea {
+    height: 10em;
+    width: 100%;
+    resize: both;
+    border: 1px solid white; }
+  form small {
+    color: red; }
+  form small.confirmation-message {
+    color: black;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  form button {
+    color: white;
+    background-color: #930101;
+    height: 2em;
+    float: inline-end;
+    border-radius: 10%;
+    border: 1px solid #930101; }
 
 /* historia.html code */
 div.main-history-container {
   margin-bottom: 1em;
-  /* este de aqui ir├í al div del video, no aqui */
   display: flex;
   flex-direction: column; }
 div.video-div {
@@ -156,9 +139,18 @@ figure {
 /* for smartphone */
 @media screen and (max-width: 399px) {
   /* index page and general configuration */
+  main {
+    padding-left: 10%;
+    padding-right: 10%; }
+
   ul.nav-ul {
     display: block;
     text-align: center; }
+
+  span.my-name {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 0.5em; }
 
   /* carta.html */
   div.menu-food-container {
@@ -166,6 +158,11 @@ figure {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+
+  p.dish-text {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 0.8em; }
 
   /* historia.html */
   img.places-img {
@@ -177,6 +174,10 @@ figure {
 /* for tablet */
 @media screen and (min-width: 400px) and (max-width: 799px) {
   /* index page and general configuration */
+  main {
+    padding-left: 10%;
+    padding-right: 10%; }
+
   ul.nav-ul {
     display: flex;
     justify-content: center;
@@ -188,6 +189,11 @@ figure {
     padding-right: 5px;
     color: #930101; }
 
+  span.my-name {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 0.7em; }
+
   /* carta.html */
   div.menu-food-container {
     display: grid;
@@ -196,6 +202,11 @@ figure {
   div.dish-card {
     margin-left: 5%;
     margin-right: 5%; }
+
+  p.dish-text {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 0.8em; }
 
   /* historia.html */
   img.places-img {
@@ -214,6 +225,11 @@ figure {
   main {
     padding-left: 25%;
     padding-right: 25%; }
+
+  span.my-name {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 1em; }
 
   ul.nav-ul {
     display: flex;
@@ -234,6 +250,11 @@ figure {
   div.dish-card {
     margin-left: 5%;
     margin-right: 5%; }
+
+  p.dish-text {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 0.7em; }
 
   /* historia.html */
   div.history-container {

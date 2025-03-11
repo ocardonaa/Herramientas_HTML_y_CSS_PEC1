@@ -67,14 +67,19 @@ $secondary-color: #f2dfca;
     border-top-right-radius: 5%;
 }
 
-@mixin padding-percent($left, $right) {
+@mixin padding-percent-left-right($left, $right) {
     padding-left: $left;
     padding-right: $right;
 }
 
-@mixin margin-percent($left, $right) {
+@mixin margin-percent-left-right($left, $right) {
     margin-left: $left;
     margin-right: $right;
+}
+
+@mixin padding-percent-top-bottom($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
 }
 
 /* general and index.html code */
@@ -98,7 +103,6 @@ body {
 
 main {
     flex: 1;
-    @include padding-percent(10%, 10%)
 }
 
 header {
@@ -125,9 +129,6 @@ span {
     & {
         &.my-name {
             color: white;
-            font-size: 0.5em;
-            padding-top: 1em;
-            padding-bottom: 1em;
             @include centered-text();
         }
 
@@ -182,11 +183,6 @@ div {
         &.dish-and-price {
             display: flex;
             justify-content: space-between;
-
-            p.dish-text {
-                font-size: 0.8em;
-                @include padding-percent(1em, 1em);
-            }
         }
     }
 }
@@ -199,46 +195,46 @@ img.dishes-img {
 
 /* contacto.html code */
 
-label {
-    display: block;
-    margin-bottom: 0.3em;
-}
-
-input {
-    border: 1px solid white;
-    height: 2em;
-    width: 100%;
-    display: block;
-}
-
-textarea {
-    height: 10em;
-    width: 100%;
-    resize: both;
-    border: 1px solid white;
-}
-
-small {
-    color: red;
-}
-
-small.confirmation-message {
-    color: black;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-button {
-    color: white;
-    background-color: $primary-color;
-    height: 2em;
-    float: inline-end;
-    border-radius: 10%;
-    border: 1px solid $primary-color;
-}
-
 form {
     margin-bottom: 3em;
+
+    label {
+        display: block;
+        margin-bottom: 0.3em;
+    }
+    
+    input {
+        border: 1px solid white;
+        height: 2em;
+        width: 100%;
+        display: block;
+    }
+    
+    textarea {
+        height: 10em;
+        width: 100%;
+        resize: both;
+        border: 1px solid white;
+    }
+    
+    small {
+        color: red;
+    }
+    
+    small.confirmation-message {
+        color: black;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    button {
+        color: white;
+        background-color: $primary-color;
+        height: 2em;
+        float: inline-end;
+        border-radius: 10%;
+        border: 1px solid $primary-color;
+    }
 }
 
 /* historia.html code */
@@ -247,11 +243,10 @@ div {
     & {
         &.main-history-container {
             margin-bottom: 1em;
-            /* este de aqui irá al div del video, no aqui */
             display: flex;
             flex-direction: column;
         }
-        
+
         &.video-div {
             margin-bottom: 2em;
         }
@@ -277,8 +272,17 @@ figure {
 @media screen and (max-width: 399px) {
     /* index page and general configuration */
 
+    main {
+        @include padding-percent-left-right(10%, 10%);
+    }
+
     ul.nav-ul {
         @include centered-text();
+    }
+
+    span.my-name {
+        @include padding-percent-top-bottom(1em, 1em);
+        font-size: 0.5em;
     }
 
     /* carta.html */
@@ -286,6 +290,11 @@ figure {
     div.menu-food-container {
         @include centered-object();
         flex-direction: column;
+    }
+
+    p.dish-text {
+        @include padding-percent-left-right(1em, 1em);
+        font-size: 0.8em;
     }
 
     /* historia.html */
@@ -304,12 +313,21 @@ figure {
 @media screen and (min-width: 400px) and (max-width: 799px) {
     /* index page and general configuration */
 
+    main {
+        @include padding-percent-left-right(10%, 10%);
+    }
+
     ul.nav-ul {
         @include centered-object();
     }
 
     ul.nav-ul li:not(:last-child)::after {
         @include navigation-menu-one-line();
+    }
+
+    span.my-name {
+        @include padding-percent-top-bottom(1em, 1em);
+        font-size: 0.7em;
     }
 
     /* carta.html */
@@ -320,7 +338,12 @@ figure {
     }
 
     div.dish-card {
-        @include margin-percent(5%, 5%);
+        @include margin-percent-left-right(5%, 5%);
+    }
+
+    p.dish-text {
+        @include padding-percent-left-right(0.5em, 0.5em);
+        font-size: 0.8em;
     }
 
     /* historia.html */
@@ -345,7 +368,12 @@ figure {
     /* index page and general configuration */
 
     main {
-        @include padding-percent(25%, 25%)
+        @include padding-percent-left-right(25%, 25%);
+    }
+
+    span.my-name {
+        @include padding-percent-top-bottom(2em, 2em);
+        font-size: 1em;
     }
 
     ul.nav-ul {
@@ -364,7 +392,12 @@ figure {
     }
 
     div.dish-card {
-        @include margin-percent(5%, 5%);
+        @include margin-percent-left-right(5%, 5%);
+    }
+
+    p.dish-text {
+        @include padding-percent-left-right(0.5em, 0.5em);
+        font-size: 0.7em;
     }
 
     /* historia.html */
