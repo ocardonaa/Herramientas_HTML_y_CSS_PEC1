@@ -62,6 +62,11 @@ a.menu-link:link, a.menu-link:visited {
   text-decoration: none; }
 a.menu-link:hover {
   color: #930101; }
+a.red-lined-link:link, a.red-lined-link:visited {
+  color: #930101;
+  text-decoration: none; }
+a.red-lined-link:hover {
+  text-decoration: underline; }
 
 /*preprocessor 3: nesting */
 nav.menu-navigation {
@@ -70,13 +75,15 @@ nav.menu-navigation {
     list-style-type: none;
     padding: 0; }
 
+img.image-white-gradient:hover {
+  border: 5px solid white; }
+
 /* carta.html code */
 div.dish-card {
   background-color: #930101;
   color: white;
   border-radius: 5%;
   margin-bottom: 1em; }
-
 div.dish-and-price {
   display: flex;
   justify-content: space-between; }
@@ -133,6 +140,8 @@ div.main-history-container {
   /* este de aqui ir├í al div del video, no aqui */
   display: flex;
   flex-direction: column; }
+div.video-div {
+  margin-bottom: 2em; }
 
 figure {
   margin: 0;
@@ -143,9 +152,6 @@ figure {
     width: 100%; }
   figure figcaption {
     font-size: 0.7em; }
-
-div.video-div {
-  margin-bottom: 2em; }
 
 /* for smartphone */
 @media screen and (max-width: 399px) {

@@ -51,6 +51,17 @@ $secondary-color: #f2dfca;
     }
 }
 
+@mixin red-line-links {
+    & {
+
+        @include contact-links();
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 @mixin top-borders {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
@@ -136,6 +147,10 @@ a {
         &.menu-link {
             @include menu-links();
         }
+
+        &.red-lined-link {
+            @include red-line-links();
+        }
     }
 }
 
@@ -149,22 +164,30 @@ nav.menu-navigation {
     }
 }
 
-/* carta.html code */
-
-div.dish-card {
-    background-color: $primary-color;
-    color: white;
-    border-radius: 5%;
-    margin-bottom: 1em;
+img.image-white-gradient:hover {
+    border: 5px solid white;
 }
 
-div.dish-and-price {
-    display: flex;
-    justify-content: space-between;
+/* carta.html code */
 
-    p.dish-text {
-        font-size: 0.8em;
-        @include padding-percent(1em, 1em);
+div {
+    & {
+        &.dish-card {
+            background-color: $primary-color;
+            color: white;
+            border-radius: 5%;
+            margin-bottom: 1em;
+        }
+
+        &.dish-and-price {
+            display: flex;
+            justify-content: space-between;
+
+            p.dish-text {
+                font-size: 0.8em;
+                @include padding-percent(1em, 1em);
+            }
+        }
     }
 }
 
@@ -220,10 +243,19 @@ form {
 
 /* historia.html code */
 
-div.main-history-container {
-    margin-bottom: 1em; /* este de aqui irá al div del video, no aqui */
-    display: flex;
-    flex-direction: column;
+div {
+    & {
+        &.main-history-container {
+            margin-bottom: 1em;
+            /* este de aqui irá al div del video, no aqui */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        &.video-div {
+            margin-bottom: 2em;
+        }
+    }
 }
 
 figure {
@@ -239,10 +271,6 @@ figure {
     figcaption {
         font-size: 0.7em;
     }
-}
-
-div.video-div {
-    margin-bottom: 2em;
 }
 
 /* for smartphone */
