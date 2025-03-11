@@ -49,6 +49,9 @@ span.my-name {
   padding-bottom: 1em;
   display: block;
   text-align: center; }
+span.contact-info {
+  color: #930101;
+  font-style: italic; }
 
 a.email-contact:link, a.email-contact:visited {
   color: #930101;
@@ -86,6 +89,9 @@ img.dishes-img {
   border-top-right-radius: 5%;
   aspect-ratio: 1/1;
   width: 100%; }
+img.places-img {
+  width: 100%;
+  aspect-ratio: 9/16; }
 
 /* contacto.html code */
 label {
@@ -103,10 +109,6 @@ textarea {
   width: 100%;
   resize: both;
   border: 1px solid white; }
-
-span.contact-info {
-  color: #930101;
-  font-style: italic; }
 
 small {
   color: red; }
@@ -126,6 +128,10 @@ button {
 
 form {
   margin-bottom: 3em; }
+
+/* historia.html code */
+div.main-history-container {
+  margin-bottom: 1em; }
 
 /* for smartphone */
 @media screen and (max-width: 399px) {

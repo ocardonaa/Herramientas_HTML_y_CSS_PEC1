@@ -110,12 +110,21 @@ h2 {
     color: $primary-color;
 }
 
-span.my-name {
-    color: white;
-    font-size: 0.5em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    @include centered-text();
+span {
+    & {
+        &.my-name {
+            color: white;
+            font-size: 0.5em;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            @include centered-text();
+        }
+
+        &.contact-info {
+            color: $primary-color;
+            font-style: italic;
+        }
+    }
 }
 
 a {
@@ -155,15 +164,23 @@ div.dish-and-price {
 
     p.dish-text {
         font-size: 0.8em;
-        padding-left: 1em;
-        padding-right: 1em;
+        @include padding-percent(1em, 1em);
     }
 }
 
-img.dishes-img {
-    @include top-borders();
-    aspect-ratio: 1/1;
-    width: 100%;
+img {
+    & {
+        &.dishes-img {
+            @include top-borders();
+            aspect-ratio: 1/1;
+            width: 100%;
+        }
+
+        &.places-img {
+            width: 100%;
+            aspect-ratio: 9/16;
+        }
+    }
 }
 
 /* contacto.html code */
@@ -187,11 +204,6 @@ textarea {
     border: 1px solid white;
 }
 
-span.contact-info {
-    color: $primary-color;
-    font-style: italic;
-}
-
 small {
     color: red;
 }
@@ -213,6 +225,12 @@ button {
 
 form {
     margin-bottom: 3em;
+}
+
+/* historia.html code */
+
+div.main-history-container {
+    margin-bottom: 1em;
 }
 
 /* for smartphone */
