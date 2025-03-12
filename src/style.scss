@@ -203,6 +203,19 @@ div {
             display: flex;
             justify-content: space-between;
         }
+
+        &.container-card {
+            position: relative;
+            text-align: left;
+            width: auto;
+            height: auto;
+            aspect-ratio: 1/1;
+        }
+
+        &.back-card {
+            display: none;
+            @include padding-percent-left-right(1em, 1em);
+        }
     }
 }
 
@@ -363,7 +376,7 @@ figure {
     }
 
     p.dish-text {
-        @include padding-percent-left-right(0.5em, 0.5em);
+        @include padding-percent-left-right(1em, 1em);
         font-size: 0.8em;
     }
 
@@ -475,7 +488,7 @@ figure {
                 width: 100%;
                 @include margin-percent-left-right(5%, 5%);
             }
-        
+
         }
     }
 

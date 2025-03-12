@@ -91,6 +91,16 @@ div.dish-card {
 div.dish-and-price {
   display: flex;
   justify-content: space-between; }
+div.container-card {
+  position: relative;
+  text-align: left;
+  width: auto;
+  height: auto;
+  aspect-ratio: 1/1; }
+div.back-card {
+  display: none;
+  padding-left: 1em;
+  padding-right: 1em; }
 
 /* contacto.html code */
 form {
@@ -214,8 +224,8 @@ figure {
     margin-right: 5%; }
 
   p.dish-text {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
     font-size: 0.8em; }
 
   /* historia.html */

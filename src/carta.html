@@ -29,11 +29,20 @@
         </nav>
     </header>
     <main>
-        <!-- Añadir los efectos de las cards flipping -->
         <h2>Aqui nuestro platos más exitosos de la carta</h2>
         <div class="menu-food-container">
             <div class="dish-card">
-                <img class="dishes-img" src="img/dishes/macarrones-bolonyesa.jpg" alt="Macarrones Bolonyesa">
+                <div class="container-card">
+                    <div class="front-card" id="front">
+                        <img class="dishes-img image-white-gradient" src="img/dishes/macarrones-bolonyesa.jpg"
+                            alt="Macarrones Bolonyesa">
+                    </div>
+                    <div class="back-card" id="back">
+                        <p>Rating</p>
+                        <p>Allergies</p>
+                        <p>Ingredients</p>
+                    </div>
+                </div>
                 <div class="dish-and-price">
                     <p class="dish-text">Macarrones a la Bolonyesa</p>
                     <p class="dish-text">10.99€</p>
@@ -79,6 +88,7 @@
     <footer>
         <span class="my-name">Oriol Cardona Alsina</span>
     </footer>
+    <script src="card-flip.js"></script>
 </body>
 
 </html>
