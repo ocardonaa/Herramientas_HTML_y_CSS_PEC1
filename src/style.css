@@ -61,6 +61,8 @@ a.red-lined-link:link, a.red-lined-link:visited {
   text-decoration: none; }
 a.red-lined-link:hover {
   text-decoration: underline; }
+a.linked-image {
+  text-align: center; }
 
 /*preprocessor 3: nesting */
 nav.menu-navigation {
@@ -71,6 +73,14 @@ nav.menu-navigation {
 
 img.image-white-gradient:hover {
   border: 5px solid white; }
+img.dishes-img {
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  aspect-ratio: 1/1;
+  width: 100%; }
+img.index-photo {
+  display: block;
+  margin: auto; }
 
 /* carta.html code */
 div.dish-card {
@@ -81,12 +91,6 @@ div.dish-card {
 div.dish-and-price {
   display: flex;
   justify-content: space-between; }
-
-img.dishes-img {
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
-  aspect-ratio: 1/1;
-  width: 100%; }
 
 /* contacto.html code */
 form {
@@ -152,6 +156,9 @@ figure {
     padding-bottom: 1em;
     font-size: 0.5em; }
 
+  img.index-photo {
+    width: 80%; }
+
   /* carta.html */
   div.menu-food-container {
     display: flex;
@@ -193,6 +200,9 @@ figure {
     padding-top: 1em;
     padding-bottom: 1em;
     font-size: 0.7em; }
+
+  img.index-photo {
+    width: 70%; }
 
   /* carta.html */
   div.menu-food-container {
@@ -241,6 +251,9 @@ figure {
     font-weight: 900;
     padding-right: 5px;
     color: #930101; }
+
+  img.index-photo {
+    width: 60%; }
 
   /* carta.html */
   div.menu-food-container {

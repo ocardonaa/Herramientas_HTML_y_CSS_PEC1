@@ -152,6 +152,10 @@ a {
         &.red-lined-link {
             @include red-line-links();
         }
+
+        &.linked-image {
+            text-align: center;
+        }
     }
 }
 
@@ -165,8 +169,23 @@ nav.menu-navigation {
     }
 }
 
-img.image-white-gradient:hover {
-    border: 5px solid white;
+img {
+    & {
+        &.image-white-gradient:hover {
+            border: 5px solid white;
+        }
+
+        &.dishes-img {
+            @include top-borders();
+            aspect-ratio: 1/1;
+            width: 100%;
+        }
+
+        &.index-photo {
+            display: block;
+            margin: auto;
+        }
+    }
 }
 
 /* carta.html code */
@@ -187,12 +206,6 @@ div {
     }
 }
 
-img.dishes-img {
-    @include top-borders();
-    aspect-ratio: 1/1;
-    width: 100%;
-}
-
 /* contacto.html code */
 
 form {
@@ -202,31 +215,31 @@ form {
         display: block;
         margin-bottom: 0.3em;
     }
-    
+
     input {
         border: 1px solid white;
         height: 2em;
         width: 100%;
         display: block;
     }
-    
+
     textarea {
         height: 10em;
         width: 100%;
         resize: both;
         border: 1px solid white;
     }
-    
+
     small {
         color: red;
     }
-    
+
     small.confirmation-message {
         color: black;
         margin-bottom: 0;
         padding-bottom: 0;
     }
-    
+
     button {
         color: white;
         background-color: $primary-color;
@@ -285,6 +298,10 @@ figure {
         font-size: 0.5em;
     }
 
+    img.index-photo {
+        width: 80%;
+    }
+
     /* carta.html */
 
     div.menu-food-container {
@@ -328,6 +345,10 @@ figure {
     span.my-name {
         @include padding-percent-top-bottom(1em, 1em);
         font-size: 0.7em;
+    }
+
+    img.index-photo {
+        width: 70%;
     }
 
     /* carta.html */
@@ -382,6 +403,10 @@ figure {
 
     ul.nav-ul li:not(:last-child)::after {
         @include navigation-menu-one-line();
+    }
+
+    img.index-photo {
+        width: 60%;
     }
 
     /* carta.html */
