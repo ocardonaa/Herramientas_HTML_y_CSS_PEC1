@@ -265,9 +265,9 @@ figure {
     margin-right: 5%; }
 
   p.dish-text {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    font-size: 0.7em; }
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1em; }
 
   /* historia.html */
   div.history-container {
@@ -294,6 +294,19 @@ figure {
     margin-top: 2em; }
 
   iframe {
-    height: calc(100vw/3.5); } }
+    height: calc(100vw/3.5); }
+
+  /* contact.html */
+  div.main-container-contact-form {
+    display: flex;
+    justify-content: space-between; }
+  div.contact-div {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%; }
+
+  button {
+    margin-left: 0;
+    margin-right: 5%; } }
 
 /*# sourceMappingURL=style.css.map */

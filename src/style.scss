@@ -421,8 +421,8 @@ figure {
     }
 
     p.dish-text {
-        @include padding-percent-left-right(0.5em, 0.5em);
-        font-size: 0.7em;
+        @include padding-percent-left-right(1em, 1em);
+        font-size: 1em;
     }
 
     /* historia.html */
@@ -460,5 +460,26 @@ figure {
 
     iframe {
         height: calc(100vw/3.5);
+    }
+
+    /* contact.html */
+
+    div {
+        & {
+            &.main-container-contact-form {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &.contact-div {
+                width: 100%;
+                @include margin-percent-left-right(5%, 5%);
+            }
+        
+        }
+    }
+
+    button {
+        @include margin-percent-left-right(0, 5%);
     }
 }

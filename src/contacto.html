@@ -31,15 +31,21 @@
   <main>
     <h2>Tienes alguna sugerencia o quieres reservar mesa?</h2>
     <form id="form" action="#" method="post">
-      <label for="username">Nombre:</label>
-      <input type="text" id="username" name="nombre" maxlength="50">
-      <small></small>
-      <label for="email">Correo electrónico:</label>
-      <input type="email" name="email" id="email">
-      <small></small>
-      <label for="message">Sugerencia:</label>
-      <textarea name="mensaje" id="message" maxlength="1000"></textarea>
-      <small></small>
+      <div class="main-container-contact-form">
+        <div class="contact-div">
+          <label for="username">Nombre:</label>
+          <input type="text" id="username" name="nombre" maxlength="50">
+          <small></small>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" name="email" id="email">
+          <small></small>
+        </div>
+        <div class="contact-div">
+          <label for="message">Sugerencia:</label>
+          <textarea name="mensaje" id="message" maxlength="1000"></textarea>
+          <small></small>
+        </div>
+      </div>
       <button type="submit">Enviar</button>
       <small id="confirmed-feedback" class="confirmation-message"></small>
     </form>

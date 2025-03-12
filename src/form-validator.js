@@ -23,7 +23,7 @@ function checkEmail(input) {
     if (isEmail.test(input.value.trim())) {
         showSuccess(input);
     } else {
-        showError(input, `${getFieldName(input)} format is not valid`);
+        showError(input, `${getFieldName(input)} es obligatorio`);
     }
 }
 
