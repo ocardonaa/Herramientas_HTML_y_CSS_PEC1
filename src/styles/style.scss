@@ -82,7 +82,7 @@ $secondary-color: #f2dfca;
     padding-bottom: $bottom;
 }
 
-/* general and index.html code */
+/* general classes */
 
 * {
     box-sizing: border-box;
@@ -125,6 +125,8 @@ h2 {
     color: $primary-color;
 }
 
+/*preprocessor 3: nesting */
+
 span {
     & {
         &.my-name {
@@ -159,7 +161,6 @@ a {
     }
 }
 
-/*preprocessor 3: nesting */
 nav.menu-navigation {
     padding-bottom: 1em;
 
@@ -192,8 +193,6 @@ img {
         }
     }
 }
-
-/* carta.html code */
 
 div {
     & {
@@ -233,8 +232,6 @@ div {
         }
     }
 }
-
-/* contacto.html code */
 
 form {
     margin-bottom: 3em;
@@ -278,8 +275,6 @@ form {
     }
 }
 
-/* historia.html code */
-
 figure {
     margin: 0;
     padding: 0;
@@ -297,7 +292,6 @@ figure {
 
 /* for smartphone */
 @media screen and (max-width: 399px) {
-    /* index page and general configuration */
 
     main {
         @include padding-percent-left-right(10%, 10%);
@@ -325,8 +319,6 @@ figure {
         }
     }
 
-    /* carta.html */
-
     div.menu-food-container {
         @include centered-object();
         flex-direction: column;
@@ -337,8 +329,6 @@ figure {
         font-size: 0.8em;
     }
 
-    /* historia.html */
-
     iframe {
         height: calc(100vw/2.1);
     }
@@ -346,7 +336,6 @@ figure {
 
 /* for tablet */
 @media screen and (min-width: 400px) and (max-width: 799px) {
-    /* index page and general configuration */
 
     main {
         @include padding-percent-left-right(10%, 10%);
@@ -379,8 +368,6 @@ figure {
         }
     }
 
-    /* carta.html */
-
     div {
         & {
             &.menu-food-container {
@@ -407,8 +394,6 @@ figure {
         }
     }
 
-    /* historia.html */
-
     iframe {
         height: calc(100vw/2);
     }
@@ -416,7 +401,6 @@ figure {
 
 /* for desktop */
 @media screen and (min-width: 800px) {
-    /* index page and general configuration */
 
     main {
         @include padding-percent-left-right(25%, 25%);
@@ -435,8 +419,6 @@ figure {
         @include navigation-menu-one-line();
     }
 
-    /* carta.html */
-
     p {
         & {
             &.dish-text {
@@ -445,8 +427,6 @@ figure {
             }
         }
     }
-
-    /* historia.html */
 
     div.history-container {
         display: flex;
@@ -490,8 +470,6 @@ figure {
     iframe {
         height: calc(100vw/3.5);
     }
-
-    /* contact.html */
 
     div {
         & {
