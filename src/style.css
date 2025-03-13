@@ -104,6 +104,12 @@ div.back-card {
   display: none;
   padding-left: 1em;
   padding-right: 1em; }
+div.main-history-container {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column; }
+div.video-div {
+  margin-bottom: 2em; }
 
 /* contacto.html code */
 form {
@@ -136,13 +142,6 @@ form {
     border: 1px solid #930101; }
 
 /* historia.html code */
-div.main-history-container {
-  margin-bottom: 1em;
-  display: flex;
-  flex-direction: column; }
-div.video-div {
-  margin-bottom: 2em; }
-
 figure {
   margin: 0;
   padding: 0;
@@ -171,6 +170,9 @@ figure {
 
   img.index-photo {
     width: 80%; }
+  img.places-img {
+    width: 100%;
+    height: auto; }
 
   /* carta.html */
   div.menu-food-container {
@@ -185,10 +187,6 @@ figure {
     font-size: 0.8em; }
 
   /* historia.html */
-  img.places-img {
-    width: 100%;
-    height: auto; }
-
   iframe {
     height: calc(100vw/2.1); } }
 /* for tablet */
@@ -216,12 +214,15 @@ figure {
 
   img.index-photo {
     width: 70%; }
+  img.places-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; }
 
   /* carta.html */
   div.menu-food-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
-
   div.dish-card {
     margin-left: 5%;
     margin-right: 5%; }
@@ -230,16 +231,10 @@ figure {
     padding-left: 1em;
     padding-right: 1em;
     font-size: 0.8em; }
-
-  /* historia.html */
-  img.places-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; }
-
   p.history-paragraf {
     font-size: 1em; }
 
+  /* historia.html */
   iframe {
     height: calc(100vw/2); } }
 /* for desktop */
@@ -265,18 +260,7 @@ figure {
     padding-right: 5px;
     color: #930101; }
 
-  img.index-photo {
-    width: 60%; }
-
   /* carta.html */
-  div.menu-food-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); }
-
-  div.dish-card {
-    margin-left: 5%;
-    margin-right: 5%; }
-
   p.dish-text {
     padding-left: 1em;
     padding-right: 1em;
@@ -305,6 +289,8 @@ figure {
     height: auto;
     object-fit: cover;
     margin-top: 2em; }
+  img.index-photo {
+    width: 60%; }
 
   iframe {
     height: calc(100vw/3.5); }
@@ -315,6 +301,12 @@ figure {
     justify-content: space-between; }
   div.contact-div {
     width: 100%;
+    margin-left: 5%;
+    margin-right: 5%; }
+  div.menu-food-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+  div.dish-card {
     margin-left: 5%;
     margin-right: 5%; }
 

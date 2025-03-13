@@ -221,6 +221,16 @@ div {
             display: none;
             @include padding-percent-left-right(1em, 1em);
         }
+
+        &.main-history-container {
+            margin-bottom: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &.video-div {
+            margin-bottom: 2em;
+        }
     }
 }
 
@@ -270,20 +280,6 @@ form {
 
 /* historia.html code */
 
-div {
-    & {
-        &.main-history-container {
-            margin-bottom: 1em;
-            display: flex;
-            flex-direction: column;
-        }
-
-        &.video-div {
-            margin-bottom: 2em;
-        }
-    }
-}
-
 figure {
     margin: 0;
     padding: 0;
@@ -316,8 +312,16 @@ figure {
         font-size: 0.5em;
     }
 
-    img.index-photo {
-        width: 80%;
+    img {
+        & {
+            &.index-photo {
+                width: 80%;
+            }
+            &.places-img {
+                width: 100%;
+                height: auto;
+            }
+        }
     }
 
     /* carta.html */
@@ -333,11 +337,6 @@ figure {
     }
 
     /* historia.html */
-
-    img.places-img {
-        width: 100%;
-        height: auto;
-    }
 
     iframe {
         height: calc(100vw/2.1);
@@ -365,37 +364,49 @@ figure {
         font-size: 0.7em;
     }
 
-    img.index-photo {
-        width: 70%;
+    img {
+        & {
+            &.index-photo {
+                width: 70%;
+            }
+
+            &.places-img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
     }
 
     /* carta.html */
 
-    div.menu-food-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+    div {
+        & {
+            &.menu-food-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
 
-    div.dish-card {
-        @include margin-percent-left-right(5%, 5%);
+            &.dish-card {
+                @include margin-percent-left-right(5%, 5%);
+            }
+        }
     }
+    
+    p {
+        & {
+            &.dish-text {
+                @include padding-percent-left-right(1em, 1em);
+                font-size: 0.8em;
+            }
 
-    p.dish-text {
-        @include padding-percent-left-right(1em, 1em);
-        font-size: 0.8em;
+            &.history-paragraf {
+                font-size: 1em;
+            }
+        }
     }
 
     /* historia.html */
-
-    img.places-img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    p.history-paragraf {
-        font-size: 1em;
-    }
 
     iframe {
         height: calc(100vw/2);
@@ -423,24 +434,15 @@ figure {
         @include navigation-menu-one-line();
     }
 
-    img.index-photo {
-        width: 60%;
-    }
-
     /* carta.html */
 
-    div.menu-food-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    div.dish-card {
-        @include margin-percent-left-right(5%, 5%);
-    }
-
-    p.dish-text {
-        @include padding-percent-left-right(1em, 1em);
-        font-size: 1em;
+    p {
+        & {
+            &.dish-text {
+                @include padding-percent-left-right(1em, 1em);
+                font-size: 1em;
+            }
+        }
     }
 
     /* historia.html */
@@ -469,11 +471,18 @@ figure {
         }
     }
 
-    img.places-img {
-        width: 50%;
-        height: auto;
-        object-fit: cover;
-        margin-top: 2em;
+    img {
+        & {
+            &.places-img {
+                width: 50%;
+                height: auto;
+                object-fit: cover;
+                margin-top: 2em;
+            }
+            &.index-photo {
+                width: 60%;
+            }
+        }
     }
 
     iframe {
@@ -494,6 +503,14 @@ figure {
                 @include margin-percent-left-right(5%, 5%);
             }
 
+            &.menu-food-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            &.dish-card {
+                @include margin-percent-left-right(5%, 5%);
+            }
         }
     }
 
