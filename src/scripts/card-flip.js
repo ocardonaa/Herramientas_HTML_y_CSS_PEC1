@@ -12,5 +12,5 @@ cards.forEach(card => {
     text.addEventListener("click", function () {
         image.style.display = "block";
         text.style.display = 'none'
-    }); 
+    });
 });
