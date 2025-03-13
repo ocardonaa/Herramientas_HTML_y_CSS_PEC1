@@ -81,6 +81,9 @@ img.dishes-img {
 img.index-photo {
   display: block;
   margin: auto; }
+img.icons-food {
+  width: 8%;
+  height: auto; }
 
 /* carta.html code */
 div.dish-card {
