@@ -1,7 +1,6 @@
 *.log
 *.json
 .sass-cache/
-dist/
 node_modules/
 .parcel-cache/
 style.css.map
