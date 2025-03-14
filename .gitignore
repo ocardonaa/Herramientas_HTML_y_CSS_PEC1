@@ -1,5 +1,5 @@
 *.log
-*.json
+package-lock.json
 .sass-cache/
 node_modules/
 .parcel-cache/
