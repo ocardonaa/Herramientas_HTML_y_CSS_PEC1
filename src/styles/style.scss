@@ -230,6 +230,10 @@ div {
         &.video-div {
             margin-bottom: 2em;
         }
+
+        &.enlaces-div {
+            font-family: Arial, Helvetica, sans-serif;
+        }
     }
 }
 
@@ -490,6 +494,11 @@ figure {
 
             &.dish-card {
                 @include margin-percent-left-right(5%, 5%);
+            }
+
+            &.enlaces-div {
+                display: flex;
+                @include padding-percent-left-right(3%, 3%);
             }
         }
     }
