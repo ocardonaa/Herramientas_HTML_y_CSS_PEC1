@@ -261,12 +261,12 @@ form {
 
     small {
         color: red;
-    }
 
-    small.confirmation-message {
-        color: black;
-        margin-bottom: 0;
-        padding-bottom: 0;
+        &.confirmation-message {
+            color: black;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
     }
 
     button {
@@ -347,10 +347,10 @@ figure {
 
     ul.nav-ul {
         @include centered-object();
-    }
 
-    ul.nav-ul li:not(:last-child)::after {
-        @include navigation-menu-one-line();
+        li:not(:last-child)::after {
+            @include navigation-menu-one-line();
+        }
     }
 
     span.my-name {
@@ -417,41 +417,38 @@ figure {
 
     ul.nav-ul {
         @include centered-object();
-    }
 
-    ul.nav-ul li:not(:last-child)::after {
-        @include navigation-menu-one-line();
-    }
-
-    p {
-        & {
-            &.dish-text {
-                @include padding-percent-left-right(1em, 1em);
-                font-size: 1em;
-            }
+        li:not(:last-child)::after {
+            @include navigation-menu-one-line();
         }
+    }
+
+    p.dish-text {
+        @include padding-percent-left-right(1em, 1em);
+        font-size: 1em;
     }
 
     div.history-container {
         display: flex;
-        flex-direction: row;
         padding-bottom: 2em;
-    }
 
-    div.history-container:nth-child(odd) {
-        flex-direction: row;
+        &:nth-child(odd) {
+            flex-direction: row;
 
-        p.history-paragraf {
-            padding-right: 2em;
-            font-size: 1rem;
+            p.history-paragraf {
+                padding-right: 2em;
+            }
         }
-    }
 
-    div.history-container:nth-child(even) {
-        flex-direction: row-reverse;
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+
+            p.history-paragraf {
+                padding-left: 2em;
+            }
+        }
 
         p.history-paragraf {
-            padding-left: 2em;
             font-size: 1rem;
         }
     }
@@ -498,7 +495,10 @@ figure {
 
             &.enlaces-div {
                 display: flex;
-                @include padding-percent-left-right(3%, 3%);
+            }
+
+            &.inner-enlaces-div {
+                @include padding-percent-left-right(5%, 5%);
             }
         }
     }
