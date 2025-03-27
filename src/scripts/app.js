@@ -1,1 +1,18 @@
 console.log('Web started');
+
+const sharp = require('sharp')
+sharp('../img/dishes/macarrones-bolonyesa.jpg')
+    .resize(500, 500)
+    .toFile('../img/dishes/1.jpg')
+sharp('../img/dishes/meatballs-pasta.jpg')
+    .resize(500, 500)
+    .toFile('../img/dishes/2.jpg')
+sharp('../img/dishes/pizza-4-quesos.jpg')
+    .resize(500, 500)
+    .toFile('../img/dishes/3.jpg')
+sharp('../img/dishes/spaguetti-carbonara.jpg')
+    .resize(500, 500)
+    .toFile('../img/dishes/4.jpg')
+sharp('../img/dishes/spaguetti-pesto.jpg')
+    .resize(500, 500)
+    .toFile('../img/dishes/5.jpg')
