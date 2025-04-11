@@ -1,3 +1,9 @@
 {
-    "quality": 80
+    "webp": {
+        "nearLossless": true,
+        "quality": 90
+    },
+    "jpeg": {
+        "quality": 75
+    }
 }
