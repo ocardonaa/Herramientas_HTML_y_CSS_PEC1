@@ -96,7 +96,7 @@ div.dish-and-price {
   justify-content: space-between; }
 div.container-card {
   position: relative;
-  text-align: left;
+  text-align: center;
   width: auto;
   height: auto;
   aspect-ratio: 1/1; }
@@ -269,6 +269,9 @@ figure {
 
   img.index-photo {
     width: 60%; }
+  img.image-place {
+    padding-top: 10%;
+    padding-bottom: 0%; }
 
   iframe {
     height: calc(100vw/3.5); }

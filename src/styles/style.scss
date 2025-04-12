@@ -209,7 +209,7 @@ div {
 
         &.container-card {
             position: relative;
-            text-align: left;
+            text-align: center;
             width: auto;
             height: auto;
             aspect-ratio: 1/1;
@@ -449,6 +449,10 @@ figure {
         & {
             &.index-photo {
                 width: 60%;
+            }
+
+            &.image-place {
+                @include padding-percent-top-bottom(10%, 0%);
             }
         }
     }
