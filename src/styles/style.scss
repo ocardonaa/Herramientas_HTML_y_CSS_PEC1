@@ -186,6 +186,10 @@ img {
             display: block;
             margin: auto;
         }
+
+        &.place-image {
+            @include centered-object();
+        }
     }
 }
 
@@ -310,11 +314,6 @@ figure {
             &.index-photo {
                 width: 80%;
             }
-
-            &.places-img {
-                width: 100%;
-                height: auto;
-            }
         }
     }
 
@@ -358,12 +357,6 @@ figure {
             &.index-photo {
                 width: 70%;
             }
-
-            &.places-img {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
         }
     }
 
@@ -376,6 +369,10 @@ figure {
 
             &.dish-card {
                 @include margin-percent-left-right(5%, 5%);
+            }
+
+            &.places-container {
+                @include centered-object();
             }
         }
     }
@@ -450,13 +447,6 @@ figure {
 
     img {
         & {
-            &.places-img {
-                width: 50%;
-                height: auto;
-                object-fit: cover;
-                margin-top: 2em;
-            }
-
             &.index-photo {
                 width: 60%;
             }
