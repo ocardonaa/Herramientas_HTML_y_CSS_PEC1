@@ -85,6 +85,9 @@ img.place-image {
   display: flex;
   justify-content: center;
   align-items: center; }
+img.image-place {
+  margin-top: 5%;
+  margin-bottom: 0%; }
 
 div.dish-card {
   background-color: #930101;
@@ -173,6 +176,10 @@ figure {
 
   img.index-photo {
     width: 80%; }
+  img.clip-path-img {
+    clip-path: circle(39% at 50% 35%);
+    margin-top: 0%;
+    margin-bottom: -35%; }
 
   div.menu-food-container {
     display: flex;
@@ -210,6 +217,10 @@ figure {
 
   img.index-photo {
     width: 70%; }
+  img.clip-path-img {
+    clip-path: rect(0% 100% 80% 0% round 10%);
+    margin-top: 10%;
+    margin-bottom: -30%; }
 
   div.menu-food-container {
     display: grid;
@@ -221,6 +232,9 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center; }
+  div.text-bottom-luca {
+    margin-top: 10%;
+    margin-bottom: 0%; }
 
   p.dish-text {
     padding-left: 1em;
@@ -273,9 +287,8 @@ figure {
 
   img.index-photo {
     width: 60%; }
-  img.image-place {
-    padding-top: 10%;
-    padding-bottom: 0%; }
+  img.clip-path-img {
+    clip-path: ellipse(50% 50% at 50% 50%); }
 
   iframe {
     height: calc(100vw/3.5); }

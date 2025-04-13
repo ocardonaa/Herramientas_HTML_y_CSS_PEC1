@@ -82,6 +82,11 @@ $secondary-color: #f2dfca;
     padding-bottom: $bottom;
 }
 
+@mixin margin-percent-top-bottom($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
 /* general classes */
 
 * {
@@ -189,6 +194,10 @@ img {
 
         &.place-image {
             @include centered-object();
+        }
+
+        &.image-place {
+            @include margin-percent-top-bottom(5%, 0%);
         }
     }
 }
@@ -318,6 +327,11 @@ figure {
             &.index-photo {
                 width: 80%;
             }
+
+            &.clip-path-img {
+                clip-path: circle(39% at 50% 35%);
+                @include margin-percent-top-bottom(0%, -35%);
+            }
         }
     }
 
@@ -361,6 +375,11 @@ figure {
             &.index-photo {
                 width: 70%;
             }
+
+            &.clip-path-img {
+                clip-path: rect(0% 100% 80% 0% round 10%);
+                @include margin-percent-top-bottom(10%, -30%);
+            }
         }
     }
 
@@ -377,6 +396,10 @@ figure {
 
             &.places-container {
                 @include centered-object();
+            }
+
+            &.text-bottom-luca {
+                @include margin-percent-top-bottom(10%, 0%);
             }
         }
     }
@@ -455,8 +478,8 @@ figure {
                 width: 60%;
             }
 
-            &.image-place {
-                @include padding-percent-top-bottom(10%, 0%);
+            &.clip-path-img {
+                clip-path: ellipse(50% 50% at 50% 50%);
             }
         }
     }
