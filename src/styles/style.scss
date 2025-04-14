@@ -248,7 +248,7 @@ img {
     & {
 
         &.image-white-gradient:hover {
-            animation: appear 1s forwards;
+            animation: appear 1s ease forwards;
         }
 
         &.dishes-img {

@@ -111,7 +111,7 @@ nav.menu-navigation {
     padding: 0; }
 
 img.image-white-gradient:hover {
-  animation: appear 1s forwards; }
+  animation: appear 1s ease forwards; }
 img.dishes-img {
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
