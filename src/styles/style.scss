@@ -87,6 +87,16 @@ $secondary-color: #f2dfca;
     margin-bottom: $bottom;
 }
 
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 /* general classes */
 
 * {
@@ -123,11 +133,20 @@ h1 {
     color: $primary-color;
     margin-top: 0;
     padding-top: 1em;
+    margin-bottom: -1em;
 }
 
 h2 {
     @include centered-text();
     color: $primary-color;
+}
+
+svg {
+    fill: $primary-color;
+}
+
+.blinking-chars-group .char {
+    animation: blink 2s 1 forwards ease-in-out;
 }
 
 /*preprocessor 3: nesting */
