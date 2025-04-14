@@ -66,9 +66,13 @@ a.email-contact:link, a.email-contact:visited {
   text-decoration: none; }
 a.menu-link:link, a.menu-link:visited {
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 0.15em solid #f2dfca;
+  transition: border-color 0.5s ease-out; }
 a.menu-link:hover {
-  color: #930101; }
+  color: #930101;
+  border-color: #930101; }
 a.red-lined-link:link, a.red-lined-link:visited {
   color: #930101;
   text-decoration: none; }
