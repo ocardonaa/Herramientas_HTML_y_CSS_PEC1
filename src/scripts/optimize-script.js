@@ -4,17 +4,16 @@ const path = require('path');
 function optimizeImages(inputDir, outputDir, images, x, y, device) {
     images.forEach((image) => {
         const inputFilePath = path.join(inputDir, image);
-        const outputFilePath = path.join(outputDir, image.replace('.jpg', '.webp'));
-        const position = outputFilePath.length - 5;
-        const finalOutputFilePath = outputFilePath.slice(0, position) + device + outputFilePath.slice(position);
+        const finalImgName = image.replace('.jpg', '');
         sharp(inputFilePath)
+            .toFormat('webp', { quality: 80 })
             .resize({
                 width: x,
                 height: y,
                 fit: sharp.fit.inside
             })
-            .webp({ quality: 80, lossless: false })
-            .toFile(finalOutputFilePath, (err, info) => {
+            .webp({ lossless: false })
+            .toFile(outputDir + finalImgName + device + '.webp', (err, info) => {
                 if (err) {
                     console.error('Error processing image:', err);
                 } else {
