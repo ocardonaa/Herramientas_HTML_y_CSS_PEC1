@@ -213,11 +213,15 @@ figure {
     padding-bottom: 1em;
     font-size: 0.5em; }
 
+  picture {
+    margin-left: 5%;
+    margin-right: 0%; }
+
   img.index-photo {
     width: 80%; }
   img.clip-path-img {
-    clip-path: circle(39% at 50% 35%);
-    margin-top: 0%;
+    clip-path: circle(35% at 45% 37%);
+    margin-top: 10%;
     margin-bottom: -35%; }
 
   div.menu-food-container {
@@ -254,11 +258,15 @@ figure {
     padding-bottom: 1em;
     font-size: 0.7em; }
 
+  picture {
+    margin-left: 5%;
+    margin-right: 0%; }
+
   img.index-photo {
     width: 70%; }
   img.clip-path-img {
-    clip-path: rect(0% 100% 80% 0% round 10%);
-    margin-top: 10%;
+    clip-path: rect(0% 95% 80% 0% round 5%);
+    margin-top: 5%;
     margin-bottom: -30%; }
 
   div.menu-food-container {
@@ -327,7 +335,9 @@ figure {
   img.index-photo {
     width: 60%; }
   img.clip-path-img {
-    clip-path: ellipse(50% 50% at 50% 50%); }
+    clip-path: ellipse(40% 40% at 49% 40%);
+    margin-top: 5%;
+    margin-bottom: -10%; }
 
   iframe {
     height: calc(100vw/3.5); }

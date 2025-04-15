@@ -32,8 +32,7 @@ sizes.forEach((elem) => {
         .resize({
             width: elem.width,
             height: elem.height,
-            fit: sharp.fit.cover,
-            position: 'center'
+            fit: sharp.fit.cover
         })
         .webp({ lossless: false })
         .toFile('../img/luca/' + name_file, (err, info) => {

@@ -392,6 +392,10 @@ figure {
         font-size: 0.5em;
     }
 
+    picture {
+        @include margin-percent-left-right(5%, 0%)
+    }
+
     img {
         & {
             &.index-photo {
@@ -399,8 +403,8 @@ figure {
             }
 
             &.clip-path-img {
-                clip-path: circle(39% at 50% 35%);
-                @include margin-percent-top-bottom(0%, -35%);
+                clip-path: circle(35% at 45% 37%);
+                @include margin-percent-top-bottom(10%, -35%);
             }
         }
     }
@@ -440,6 +444,10 @@ figure {
         font-size: 0.7em;
     }
 
+    picture {
+        @include margin-percent-left-right(5%, 0%)
+    }
+
     img {
         & {
             &.index-photo {
@@ -447,8 +455,8 @@ figure {
             }
 
             &.clip-path-img {
-                clip-path: rect(0% 100% 80% 0% round 10%);
-                @include margin-percent-top-bottom(10%, -30%);
+                clip-path: rect(0% 95% 80% 0% round 5%);
+                @include margin-percent-top-bottom(5%, -30%);
             }
         }
     }
@@ -549,7 +557,8 @@ figure {
             }
 
             &.clip-path-img {
-                clip-path: ellipse(50% 50% at 50% 50%);
+                clip-path: ellipse(40% 40% at 49% 40%);
+                @include margin-percent-top-bottom(5%, -10%);
             }
         }
     }
