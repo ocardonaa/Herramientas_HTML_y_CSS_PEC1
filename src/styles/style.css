@@ -213,7 +213,7 @@ figure {
     padding-bottom: 1em;
     font-size: 0.5em; }
 
-  picture {
+  picture.luca-picture {
     margin-left: 5%;
     margin-right: 0%; }
 
@@ -258,7 +258,7 @@ figure {
     padding-bottom: 1em;
     font-size: 0.7em; }
 
-  picture {
+  picture.luca-picture {
     margin-left: 5%;
     margin-right: 0%; }
 
