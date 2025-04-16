@@ -44,7 +44,7 @@ $secondary-color: #f2dfca;
     }
 }
 
-@mixin contact-links {
+@mixin red-line-links {
     & {
 
         &:link,
@@ -52,13 +52,6 @@ $secondary-color: #f2dfca;
             color: $primary-color;
             text-decoration: none;
         }
-    }
-}
-
-@mixin red-line-links {
-    & {
-
-        @include contact-links();
 
         &:hover {
             text-decoration: underline;
@@ -101,7 +94,7 @@ $secondary-color: #f2dfca;
     }
 }
 
-@keyframes appear {
+@keyframes shrink {
     0% {
         clip-path: rect(0% 100% 100% 0% round 0%);
     }
@@ -218,9 +211,6 @@ span {
 
 a {
     & {
-        &.email-contact {
-            @include contact-links();
-        }
 
         &.menu-link {
             @include menu-links();
@@ -228,10 +218,6 @@ a {
 
         &.red-lined-link {
             @include red-line-links();
-        }
-
-        &.linked-image {
-            text-align: center;
         }
     }
 }
@@ -249,22 +235,13 @@ img {
     & {
 
         &.image-white-gradient:hover {
-            animation: appear 1s ease forwards;
+            animation: shrink 1s ease forwards;
         }
 
         &.dishes-img {
             @include top-borders();
             aspect-ratio: 1/1;
             width: 100%;
-        }
-
-        &.index-photo {
-            display: block;
-            margin: auto;
-        }
-
-        &.place-image {
-            @include centered-object();
         }
 
         &.image-place {
@@ -399,9 +376,6 @@ figure {
 
     img {
         & {
-            &.index-photo {
-                width: 80%;
-            }
 
             &.clip-path-img {
                 clip-path: circle(35% at 45% 37%);
@@ -472,11 +446,10 @@ figure {
 
     img {
         & {
-            &.index-photo {
-                width: 70%;
-            }
 
             &.clip-path-img {
+                width: 60vw;
+                height: auto;
                 clip-path: rect(0% 95% 80% 0% round 5%);
                 @include margin-percent-top-bottom(5%, -30%);
             }
@@ -590,9 +563,6 @@ figure {
 
     img {
         & {
-            &.index-photo {
-                width: 60%;
-            }
 
             &.clip-path-img {
                 clip-path: ellipse(40% 40% at 49% 40%);
