@@ -247,7 +247,10 @@ figure {
 
   .history-svg {
     margin-top: 0;
-    margin-bottom: -15%; } }
+    margin-bottom: -15%; }
+
+  text.special-text-phone {
+    font-size: 0.8em; } }
 /* for tablet */
 @media screen and (min-width: 400px) and (max-width: 799px) {
   main {

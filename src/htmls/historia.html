@@ -7,6 +7,7 @@
   <title>Historia Page</title>
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="icon" href="../img/pizza.png" type="image/png">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 
 <body>
@@ -64,7 +65,7 @@
             <source srcset="../img/optimized-places/napoles1-tablet.webp"
               media="(min-width: 400px) and (max-width: 799px)">
             <source srcset="../img/optimized-places/napoles1-phone.webp" media="(max-width: 399px)">
-            <img src="../img/places/napoles1.jpg" class="image-place" alt="Img Naples 1">
+            <img src="../img/places/napoles1.jpg" class="image-place" data-aos-duration="1000" data-aos-delay="600" data-aos-mirror="true" data-aos="fade-left" alt="Img Naples 1">
           </picture>
         </div>
       </div>
@@ -91,14 +92,14 @@
             <source srcset="../img/optimized-places/napoles2-tablet.webp"
               media="(min-width: 400px) and (max-width: 799px)">
             <source srcset="../img/optimized-places/napoles2-phone.webp" media="(max-width: 399px)">
-            <img src="../img/places/napoles2.jpg" class="image-place" alt="Img Naples 2">
+            <img src="../img/places/napoles2.jpg" class="image-place" data-aos-duration="1000" data-aos-delay="600" data-aos="fade-right" alt="Img Naples 2">
           </picture>
         </div>
       </div>
       <div class="history-container">
         <div>
           <h2><svg width=100% height="100%" class="blinking-chars history-svg">
-              <text text-anchor="middle" x="150%" y="50%" direction="ltr">
+              <text text-anchor="middle" x="150%" y="50%" direction="ltr" class="special-text-phone">
                 La Napolitana actualmente
                 <animate attributeName="x" from="150%" to="50%" dur="2s" fill="freeze" />
               </text>
@@ -115,7 +116,7 @@
             <source srcset="../img/optimized-places/napoles3-tablet.webp"
               media="(min-width: 400px) and (max-width: 799px)">
             <source srcset="../img/optimized-places/napoles3-phone.webp" media="(max-width: 399px)">
-            <img src="../img/places/napoles3.jpg" class="image-place" alt="Img Naples 3">
+            <img src="../img/places/napoles3.jpg" class="image-place" data-aos-duration="1000" data-aos-delay="600" data-aos="fade-left" alt="Img Naples 3">
           </picture>
         </div>
       </div>
@@ -133,6 +134,8 @@
   <footer>
     <span class="my-name">Oriol Cardona Alsina</span>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="../scripts/startAOS.js"></script>
 </body>
 
 </html>

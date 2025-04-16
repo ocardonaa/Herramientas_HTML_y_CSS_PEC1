@@ -1,0 +1,1 @@
+{"mappings":"ACAA,QAAQ,GAAG,CAAC,eACZ,IAAI,IAAI","sources":["<anon>","src/scripts/app.js"],"sourcesContent":["var $8ca1440326a0f27b$exports = {};\nconsole.log('Web started');\nAOS.init();\n\n\n//# sourceMappingURL=htmls.540e2243.js.map\n","console.log('Web started');\r\nAOS.init();"],"names":["console","log","AOS","init"],"version":3,"file":"htmls.540e2243.js.map"}
