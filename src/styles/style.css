@@ -343,6 +343,8 @@ figure {
       font-size: 1rem; }
 
   img.clip-path-img {
+    width: 50vw;
+    height: auto;
     clip-path: ellipse(40% 40% at 49% 40%);
     margin-top: 5%;
     margin-bottom: -10%; }

@@ -565,6 +565,8 @@ figure {
         & {
 
             &.clip-path-img {
+                width: 50vw;
+                height: auto;
                 clip-path: ellipse(40% 40% at 49% 40%);
                 @include margin-percent-top-bottom(5%, -10%);
             }
