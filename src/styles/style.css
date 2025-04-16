@@ -223,12 +223,18 @@ figure {
     clip-path: circle(35% at 45% 37%);
     margin-top: 10%;
     margin-bottom: -35%; }
+  img.image-place {
+    clip-path: rect(0% 100% 100% 0% round 5%); }
 
   div.menu-food-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+  div.places-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
   p.dish-text {
     padding-left: 1em;
@@ -268,6 +274,8 @@ figure {
     clip-path: rect(0% 95% 80% 0% round 5%);
     margin-top: 5%;
     margin-bottom: -30%; }
+  img.image-place {
+    clip-path: rect(0% 100% 100% 0% round 5%); }
 
   div.menu-food-container {
     display: grid;
@@ -325,10 +333,14 @@ figure {
       flex-direction: row; }
       div.history-container:nth-child(odd) p.history-paragraf {
         padding-right: 2em; }
+      div.history-container:nth-child(odd) img.image-place {
+        clip-path: xywh(0 1% 100% 95% round 10% 0); }
     div.history-container:nth-child(even) {
       flex-direction: row-reverse; }
       div.history-container:nth-child(even) p.history-paragraf {
         padding-left: 2em; }
+      div.history-container:nth-child(even) img.image-place {
+        clip-path: xywh(0 1% 100% 95% round 0 10%); }
     div.history-container p.history-paragraf {
       font-size: 1rem; }
 

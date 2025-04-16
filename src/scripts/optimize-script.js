@@ -10,7 +10,7 @@ function optimizeImages(inputDir, outputDir, images, x, y, device) {
             .resize({
                 width: x,
                 height: y,
-                fit: sharp.fit.inside
+                fit: sharp.fit.cover
             })
             .webp({ lossless: false })
             .toFile(outputDir + finalImgName + device + '.webp', (err, info) => {
