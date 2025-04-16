@@ -193,6 +193,7 @@ h2 {
 
 svg {
     fill: $primary-color;
+    display: inline;
 }
 
 .blinking-chars-group .char {
@@ -435,6 +436,10 @@ figure {
     iframe {
         height: calc(100vw/2.1);
     }
+
+    .history-svg {
+        @include margin-percent-top-bottom(0, -15%);
+    }
 }
 
 /* for tablet */
@@ -514,6 +519,10 @@ figure {
 
     iframe {
         height: calc(100vw/2);
+    }
+
+    .history-svg {
+        @include margin-percent-top-bottom(0, -7%);
     }
 }
 
@@ -625,5 +634,9 @@ figure {
 
     button {
         @include margin-percent-left-right(0, 5%);
+    }
+
+    .history-svg {
+        @include margin-percent-top-bottom(0, -10%);
     }
 }

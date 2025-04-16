@@ -70,7 +70,8 @@ h2 {
   color: #930101; }
 
 svg {
-  fill: #930101; }
+  fill: #930101;
+  display: inline; }
 
 .blinking-chars-group .char {
   animation: blink 2s 1 forwards ease-in-out; }
@@ -242,7 +243,11 @@ figure {
     font-size: 0.8em; }
 
   iframe {
-    height: calc(100vw/2.1); } }
+    height: calc(100vw/2.1); }
+
+  .history-svg {
+    margin-top: 0;
+    margin-bottom: -15%; } }
 /* for tablet */
 @media screen and (min-width: 400px) and (max-width: 799px) {
   main {
@@ -299,7 +304,11 @@ figure {
     font-size: 1em; }
 
   iframe {
-    height: calc(100vw/2); } }
+    height: calc(100vw/2); }
+
+  .history-svg {
+    margin-top: 0;
+    margin-bottom: -7%; } }
 /* for desktop */
 @media screen and (min-width: 800px) {
   main {
@@ -375,6 +384,10 @@ figure {
 
   button {
     margin-left: 0;
-    margin-right: 5%; } }
+    margin-right: 5%; }
+
+  .history-svg {
+    margin-top: 0;
+    margin-bottom: -10%; } }
 
 /*# sourceMappingURL=style.css.map */
