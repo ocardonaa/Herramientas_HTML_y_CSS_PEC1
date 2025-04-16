@@ -4,23 +4,23 @@ const sizes = [
     {
         'width': 300,
         'height': 450,
-        'number': '1'
+        'device': '-phone'
     },
     {
         'width': 600,
         'height': 900,
-        'number': '2'
+        'device': '-tablet'
     },
     {
         'width': 1200,
         'height': 900,
-        'number': '3'
+        'device': '-desktop'
     }
 ]
 
 sizes.forEach((elem) => {
-    const name_file = 'luca' + elem.number + '.webp';
-    sharp('../img/luca/luca_hd.png')
+    const name_file = 'luca' + elem.device + '.webp';
+    sharp('../img/luca/luca.png')
         .toFormat('webp', { quality: 80 })
         .resize({
             width: elem.width,
