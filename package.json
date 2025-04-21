@@ -1,7 +1,7 @@
 {
   "name": "PEC1",
   "source": "src/htmls/index.html",
-  "browserslist": "defaults",
+  "browserslist": "> 0.2% and not dead",
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
