@@ -1,1 +1,0 @@
-{"mappings":"ACAA,IAAI,IAAI,CAAC,CACL,OAAQ,CAAA,CACZ","sources":["<anon>","src/scripts/startAOS.js"],"sourcesContent":["AOS.init({\n    mirror: true\n});\n\n//# sourceMappingURL=historia.a47153d8.js.map\n","AOS.init({\r\n    mirror: true\r\n});"],"names":["AOS","init","mirror"],"version":3,"file":"historia.a47153d8.js.map"}
