@@ -148,10 +148,7 @@
       images.forEach(img => {
           img.setAttribute("loading", "lazy");
       });
-      if (!isMobile && !isTablet) {
-        const img = document.getElementById('naples1')
-        img.removeAttribute('loading');
-      }
+      
     }
     applyConditionalLazyLoading();
 
