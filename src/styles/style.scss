@@ -615,4 +615,8 @@ figure {
     .history-svg {
         @include margin-percent-top-bottom(0, -10%);
     }
+
+    text.special-text-phone {
+        font-size: 0.8em;
+    }
 }
