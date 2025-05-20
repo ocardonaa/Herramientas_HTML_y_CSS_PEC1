@@ -151,7 +151,7 @@
       });
       if (isDesktop) {
         const firstImage = document.getElementById('naples1');
-        firstImage.removeAttribute('loading');
+        firstImage.setAttribute("loading", "eager");
       }
     }
     applyConditionalLazyLoading();
