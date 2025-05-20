@@ -142,16 +142,14 @@
   <script defer src="../scripts/startAOS.js"></script>
   <script>
     function applyConditionalLazyLoading() {
-      const isMobile = window.matchMedia("(max-width: 399px)").matches;
-      const isTablet = window.matchMedia("(min-width: 400px) && (max-width: 799px)").matches;
-      const isDesktop = window.matchMedia("(min-width: 800px)").matches;
+      const isTablet = window.matchMedia("(max-width: 799px)").matches;
       const images = document.querySelectorAll("img.image-place");
       images.forEach(img => {
           img.setAttribute("loading", "lazy");
       });
-      if (isDesktop) {
+      if (!isTablet) {
         const firstImage = document.getElementById('naples1');
-        firstImage.setAttribute("loading", "eager");
+        firstImage.setAttribute("loading", "auto");
       }
     }
     applyConditionalLazyLoading();
