@@ -140,6 +140,34 @@
   </footer>
   <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script defer src="../scripts/startAOS.js"></script>
+  <script>
+  // Function that applies lazy loading conditionally based on device width
+  function applyConditionalLazyLoading() {
+    const isMobile = window.matchMedia("(max-width: 399px)").matches;
+    const images = document.querySelectorAll("img.image-place");
+    
+    images.forEach(img => {
+      if (isMobile) {
+        // Apply lazy loading on mobile devices
+        img.setAttribute("loading", "lazy");
+      } else {
+        // Remove lazy loading on desktop to load images eagerly
+        img.removeAttribute("loading");
+      }
+    });
+  }
+
+  // Run on initial page load
+  applyConditionalLazyLoading();
+
+  // Optional: run on window resize (debounced for performance)
+  let resizeTimeout;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(applyConditionalLazyLoading, 1);
+  });
+</script>
 </body>
 
 </html>
+
