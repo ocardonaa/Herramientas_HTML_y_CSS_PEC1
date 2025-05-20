@@ -94,7 +94,7 @@
               media="(min-width: 400px) and (max-width: 799px)">
             <source srcset="../img/optimized-places/napoles2-phone.webp" media="(max-width: 399px)">
             <img src="../img/places/napoles2.jpg" class="image-place" data-aos-duration="1000" data-aos-delay="600"
-              data-aos="fade-right" alt="Img Naples 2" id="naples2">
+              data-aos="fade-right" alt="Img Naples 2" id="naples2" loading="lazy">
           </picture>
         </div>
       </div>
@@ -121,7 +121,7 @@
               media="(min-width: 400px) and (max-width: 799px)">
             <source srcset="../img/optimized-places/napoles3-phone.webp" media="(max-width: 399px)">
             <img src="../img/places/napoles3.jpg" class="image-place" data-aos-duration="1000" data-aos-delay="600"
-              data-aos="fade-left" alt="Img Naples 3" id="naples3">
+              data-aos="fade-left" alt="Img Naples 3" id="naples3" loading="lazy">
           </picture>
         </div>
       </div>
@@ -140,26 +140,7 @@
   </footer>
   <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script defer src="../scripts/startAOS.js"></script>
-  <script>
-    function applyConditionalLazyLoading() {
-      const isTablet = window.matchMedia("(max-width: 799px)").matches;
-      const images = document.querySelectorAll("img.image-place");
-      images.forEach(img => {
-          img.setAttribute("loading", "lazy");
-      });
-      if (!isTablet) {
-        const firstImage = document.getElementById('naples1');
-        firstImage.removeAttribute("loading");
-      }
-    }
-    applyConditionalLazyLoading();
-
-    let resizeTimeout;
-    window.addEventListener("resize", () => {
-      clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(applyConditionalLazyLoading, 1);
-    });
-</script>
+  
 </body>
 
 </html>
