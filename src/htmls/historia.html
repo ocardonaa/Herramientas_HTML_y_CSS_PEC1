@@ -144,11 +144,15 @@
     function applyConditionalLazyLoading() {
       const isMobile = window.matchMedia("(max-width: 399px)").matches;
       const isTablet = window.matchMedia("(min-width: 400px) && (max-width: 799px)").matches;
+      const isDesktop = window.matchMedia("(min-width: 800px)").matches;
       const images = document.querySelectorAll("img.image-place");
       images.forEach(img => {
           img.setAttribute("loading", "lazy");
       });
-      
+      if (isDesktop) {
+        const firstImage = document.getElementById('naples1');
+        firstImage.removeAttribute('loading');
+      }
     }
     applyConditionalLazyLoading();
 
