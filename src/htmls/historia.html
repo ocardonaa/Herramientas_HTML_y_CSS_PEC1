@@ -149,7 +149,7 @@
       });
       if (!isTablet) {
         const firstImage = document.getElementById('naples1');
-        firstImage.setAttribute("loading", "auto");
+        firstImage.removeAttribute("loading");
       }
     }
     applyConditionalLazyLoading();
