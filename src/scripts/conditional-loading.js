@@ -21,11 +21,13 @@ resizeTimeout = setTimeout(applyConditionalLazyLoading, 1);
 function applyConditionalLazyLoading() {
     const isTablet = window.matchMedia("(max-width: 399px)").matches;
     const firstImage = document.getElementById('naples1');
+    const firstText = document.getElementById("firstText");
     if (isTablet) {
         firstImage.setAttribute("loading", "lazy");
+        firstText.setAttribute("fetchpriority", "high");
     }
     else {
-        firstImage.setAttribute("fetchpriority", "high")
+        firstImage.setAttribute("fetchpriority", "high");
     }
 }
 applyConditionalLazyLoading();
