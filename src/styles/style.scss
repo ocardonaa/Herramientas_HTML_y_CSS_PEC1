@@ -148,6 +148,7 @@ $secondary-color: #f2dfca;
 
 body {
     font-family: "Playwrite IT Moderna", cursive;
+    font-display: swap;
     font-weight: 400;
     background: linear-gradient(to bottom, $secondary-color, #fff);
     background-repeat: no-repeat;
