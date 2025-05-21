@@ -7,9 +7,7 @@
     "build": "npm-run-all clean parcel:build",
     "parcel:dev": "parcel",
     "parcel:build": "parcel build",
-    "clean": "rimraf .dist .parcel-cache",
-    "optimize-html": "parcel build \"src/**/*.html\"",
-    "optimize-css": "parcel build \"src/**/*.scss\""
+    "clean": "rimraf .dist .parcel-cache"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.14.2",
