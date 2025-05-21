@@ -19,10 +19,13 @@ resizeTimeout = setTimeout(applyConditionalLazyLoading, 1);
 });
 */
 function applyConditionalLazyLoading() {
-    const isTablet = window.matchMedia("(max-width: 799px)").matches;
+    const isTablet = window.matchMedia("(max-width: 399px)").matches;
     const firstImage = document.getElementById('naples1');
     if (isTablet) {
         firstImage.setAttribute("loading", "lazy");
+    }
+    else {
+        firstImage.setAttribute("fetchpriority", "high")
     }
 }
 applyConditionalLazyLoading();
