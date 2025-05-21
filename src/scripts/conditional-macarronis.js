@@ -1,5 +1,5 @@
 function applyConditionalLazyLoading() {
-    const isPhone = window.matchMedia("(max-width: 399px)").matches;
+    const isPhone = window.matchMedia("(max-width: 799px)").matches;
     const firstImage = document.getElementById('bolonyesa');
     if (!isPhone) {
         firstImage.setAttribute("loading", "lazy");
