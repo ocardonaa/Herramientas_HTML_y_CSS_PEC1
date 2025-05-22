@@ -36,6 +36,7 @@
 body {
   font-family: "Playwrite IT Moderna", cursive;
   font-weight: 400;
+  font-display: swap;
   background: linear-gradient(to bottom, #f2dfca, #fff);
   background-repeat: no-repeat;
   margin: 0;
