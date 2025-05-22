@@ -102,8 +102,8 @@ a.red-lined-link:hover {
 
 nav.menu-navigation {
   padding-bottom: 1em;
-  min-height: 1em;
-  min-width: 1em; }
+  min-height: auto;
+  min-width: 100%; }
   nav.menu-navigation ul.nav-ul {
     list-style-type: none;
     padding: 0; }
