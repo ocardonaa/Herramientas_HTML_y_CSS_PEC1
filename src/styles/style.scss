@@ -223,6 +223,8 @@ a {
 
 nav.menu-navigation {
     padding-bottom: 1em;
+    min-height: 1em;
+    min-width: 1em;
 
     ul.nav-ul {
         list-style-type: none;
@@ -249,6 +251,8 @@ img {
 
         &.clip-path-img {
             height: auto;
+            min-height: max-content;
+            min-width: max-content;
         }
     }
 }

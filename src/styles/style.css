@@ -101,7 +101,9 @@ a.red-lined-link:hover {
   text-decoration: underline; }
 
 nav.menu-navigation {
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  min-height: 1em;
+  min-width: 1em; }
   nav.menu-navigation ul.nav-ul {
     list-style-type: none;
     padding: 0; }
@@ -117,7 +119,9 @@ img.image-place {
   margin-top: 5%;
   margin-bottom: 0%; }
 img.clip-path-img {
-  height: auto; }
+  height: auto;
+  min-height: max-content;
+  min-width: max-content; }
 
 div.dish-card {
   background-color: #930101;
