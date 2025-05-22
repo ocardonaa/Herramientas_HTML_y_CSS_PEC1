@@ -30,9 +30,6 @@
   100% {
     clip-path: rect(5% 95% 100% 5% round 20%); } }
 /* general classes */
-* {
-  box-sizing: border-box; }
-
 body {
   font-family: "Playwrite IT Moderna", cursive;
   font-weight: 400;
