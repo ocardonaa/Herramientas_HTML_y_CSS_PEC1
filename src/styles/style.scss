@@ -16,6 +16,8 @@ $secondary-color: #f2dfca;
     font-weight: 900;
     padding-right: 5px;
     color: $primary-color;
+    min-height: 1em;
+    min-width: 1em;
 }
 
 @mixin centered-text {

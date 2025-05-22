@@ -259,7 +259,9 @@ figure {
       content: " | ";
       font-weight: 900;
       padding-right: 5px;
-      color: #930101; }
+      color: #930101;
+      min-height: 1em;
+      min-width: 1em; }
 
   span.my-name {
     padding-top: 1em;
@@ -322,7 +324,9 @@ figure {
       content: " | ";
       font-weight: 900;
       padding-right: 5px;
-      color: #930101; }
+      color: #930101;
+      min-height: 1em;
+      min-width: 1em; }
 
   p.dish-text {
     padding-left: 1em;
