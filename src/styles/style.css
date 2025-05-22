@@ -70,6 +70,8 @@ h2 {
   display: block;
   text-align: center;
   color: #930101;
+  width: 100%;
+  height: auto;
   min-width: fit-content;
   min-height: 1em; }
 
@@ -158,6 +160,9 @@ div.luca-img {
   display: flex;
   justify-content: center;
   align-items: center; }
+div.index-text-div {
+  width: 100%;
+  height: auto; }
 
 form {
   margin-bottom: 3em; }

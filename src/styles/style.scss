@@ -190,6 +190,8 @@ h1 {
 h2 {
     @include centered-text();
     color: $primary-color;
+    width: 100%;
+    height: auto;
     @include min-width-height(fit-content, 1em);
 }
 
@@ -309,6 +311,11 @@ div {
 
         &.luca-img {
             @include centered-object();
+        }
+
+        &.index-text-div {
+            width: 100%;
+            height: auto;
         }
     }
 }
