@@ -43,14 +43,10 @@ body {
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  min-width: 100%;
-  min-height: fit-content; }
+  flex-direction: column; }
 
 main {
-  flex: 1;
-  min-width: 100%;
-  min-height: auto; }
+  flex: 1; }
 
 header {
   background-color: #f2dfca; }
@@ -129,9 +125,7 @@ img.image-place {
   margin-top: 5%;
   margin-bottom: 0%; }
 img.clip-path-img {
-  height: auto;
-  min-width: fit-content;
-  min-height: fit-content; }
+  height: auto; }
 
 div.dish-card {
   background-color: #930101;

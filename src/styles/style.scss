@@ -160,12 +160,10 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    @include min-width-height(100%, fit-content);
 }
 
 main {
     flex: 1;
-    @include min-width-height(100%, auto);
 }
 
 header {
@@ -260,7 +258,6 @@ img {
 
         &.clip-path-img {
             height: auto;
-            @include min-width-height(fit-content, fit-content);
         }
     }
 }
