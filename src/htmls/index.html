@@ -10,6 +10,9 @@
   <noscript>
     <link rel="stylesheet" href="../styles/style.css">
   </noscript>
+  <link rel="preload" as="image" href="../img/luca/luca-phone.webp" type="image/webp">
+  <link rel="preload" as="image" href="../img/luca/luca-tablet.webp" type="image/webp">
+  <link rel="preload" as="image" href="../img/luca/luca-desktop.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet"
@@ -57,11 +60,11 @@
       <p>Quieres saber más sobre nosotros? Pincha sobre la imagen de Luca, nuestro fundador, para saber más de nuestra
         historia</p>
       <div class="luca-img">
-        <a href="historia.html" width='100' height="100">
+        <a href="historia.html">
           <picture class="luca-picture">
-            <source srcset="../img/luca/luca-desktop.webp" media="(min-width: 800px)">
-            <source srcset="../img/luca/luca-tablet.webp" media="(min-width: 400px) and (max-width: 799px)">
-            <source srcset="../img/luca/luca-phone.webp" media="(max-width: 399px)">
+            <source srcset="../img/luca/luca-desktop.webp" media="(min-width: 800px)" width="1200" height="900">
+            <source srcset="../img/luca/luca-tablet.webp" media="(min-width: 400px) and (max-width: 799px)" width="600" height="800">
+            <source srcset="../img/luca/luca-phone.webp" media="(max-width: 399px)" width="300" height="400">
             <img class="clip-path-img" src="../img/luca/luca.webp" alt="Img Luca" fetchpriority="high"
               width="300" height="400">
           </picture>
