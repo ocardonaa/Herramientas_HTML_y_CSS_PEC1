@@ -61,12 +61,16 @@ h1 {
   color: #930101;
   margin-top: 0;
   padding-top: 1em;
-  margin-bottom: -1em; }
+  margin-bottom: -1em;
+  min-height: 1em;
+  min-width: fit-content; }
 
 h2 {
   display: block;
   text-align: center;
-  color: #930101; }
+  color: #930101;
+  min-height: 1em;
+  min-width: fit-content; }
 
 svg {
   fill: #930101;
@@ -120,8 +124,8 @@ img.image-place {
   margin-bottom: 0%; }
 img.clip-path-img {
   height: auto;
-  min-height: max-content;
-  min-width: max-content; }
+  min-height: fit-content;
+  min-width: fit-content; }
 
 div.dish-card {
   background-color: #930101;

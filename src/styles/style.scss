@@ -175,11 +175,15 @@ h1 {
     margin-top: 0;
     padding-top: 1em;
     margin-bottom: -1em;
+    min-height: 1em;
+    min-width: fit-content;
 }
 
 h2 {
     @include centered-text();
     color: $primary-color;
+    min-height: 1em;
+    min-width: fit-content;
 }
 
 svg {
@@ -251,8 +255,8 @@ img {
 
         &.clip-path-img {
             height: auto;
-            min-height: max-content;
-            min-width: max-content;
+            min-height: fit-content;
+            min-width: fit-content;
         }
     }
 }
