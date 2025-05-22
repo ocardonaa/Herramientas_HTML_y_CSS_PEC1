@@ -24,7 +24,7 @@
 <body>
   <header>
     <h1>
-      <svg width="300"  height="200" viewBox="0 0 200 200" class="blinking-chars">
+      <svg width="300" height="200" viewBox="0 0 200 200" class="blinking-chars">
         <text text-anchor="middle" x="50%" y="50%" class="blinking-chars-group">
           <tspan class="char" dy="0">La Napolitana</tspan>
         </text>
@@ -59,10 +59,10 @@
         <a href="historia.html">
           <picture class="luca-picture">
             <source srcset="../img/luca/luca-desktop.webp" media="(min-width: 800px)" width="1200" height="900">
-            <source srcset="../img/luca/luca-tablet.webp" media="(min-width: 400px) and (max-width: 799px)" width="600" height="800">
+            <source srcset="../img/luca/luca-tablet.webp" media="(min-width: 400px) and (max-width: 799px)" width="600"
+              height="800">
             <source srcset="../img/luca/luca-phone.webp" media="(max-width: 399px)" width="300" height="400">
-            <img class="clip-path-img" src="../img/luca/luca.webp" alt="Img Luca" fetchpriority="high"
-              width="300" height="400">
+            <img class="clip-path-img" src="../img/luca/luca.webp" alt="Img Luca" width="300" height="400" id="luca">
           </picture>
         </a>
       </div>
@@ -76,6 +76,7 @@
   <footer>
     <span class="my-name">Oriol Cardona Alsina</span>
   </footer>
+  <script defer src="../scripts/load-luca.js"></script>
 </body>
 
 </html>
