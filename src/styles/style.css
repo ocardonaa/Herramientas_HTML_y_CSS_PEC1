@@ -30,6 +30,9 @@
   100% {
     clip-path: rect(5% 95% 100% 5% round 20%); } }
 /* general classes */
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: "Playwrite IT Moderna", cursive;
   font-weight: 400;
@@ -114,7 +117,8 @@ img.image-place {
   margin-top: 5%;
   margin-bottom: 0%; }
 img.clip-path-img {
-  height: auto; }
+  height: auto;
+  aspect-ratio: 3/4; }
 
 div.dish-card {
   background-color: #930101;
@@ -207,7 +211,7 @@ figure {
 
   img.clip-path-img {
     width: 80vw;
-    clip-path: circle(35% at 45% 30%);
+    clip-path: circle(33% at 45% 30%);
     margin-top: 10%;
     margin-bottom: -35%; }
   img.image-place {
