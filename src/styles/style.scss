@@ -310,11 +310,6 @@ div {
         &.luca-img {
             @include centered-object();
         }
-
-        &.index-min-sizes {
-            min-height: fit-content;
-            min-width: none;
-        }
     }
 }
 

@@ -158,9 +158,6 @@ div.luca-img {
   display: flex;
   justify-content: center;
   align-items: center; }
-div.index-min-sizes {
-  min-height: fit-content;
-  min-width: none; }
 
 form {
   margin-bottom: 3em; }
