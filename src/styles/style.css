@@ -48,7 +48,9 @@ body {
   min-height: fit-content; }
 
 main {
-  flex: 1; }
+  flex: 1;
+  min-width: 100%;
+  min-height: auto; }
 
 header {
   background-color: #f2dfca; }
@@ -160,9 +162,7 @@ div.enlaces-div {
 div.luca-img {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-width: fit-content;
-  min-height: fit-content; }
+  align-items: center; }
 
 form {
   margin-bottom: 3em; }
