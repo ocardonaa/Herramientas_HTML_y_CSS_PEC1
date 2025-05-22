@@ -155,6 +155,8 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    min-height: fit-content;
+    min-width: fit-content;
 }
 
 main {
