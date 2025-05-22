@@ -265,7 +265,7 @@ figure {
     margin-right: 0%; }
 
   img.clip-path-img {
-    width: 60vw;
+    width: 50vw;
     height: auto;
     clip-path: rect(0% 90% 80% 0% round 5%);
     margin-top: 5%;
