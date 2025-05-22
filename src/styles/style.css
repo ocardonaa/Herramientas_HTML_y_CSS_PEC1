@@ -207,6 +207,8 @@ figure {
     margin-right: 0%; }
 
   img.clip-path-img {
+    width: 80vw;
+    height: auto;
     clip-path: circle(35% at 45% 30%);
     margin-top: 10%;
     margin-bottom: -35%; }
