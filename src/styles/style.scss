@@ -263,6 +263,7 @@ img {
         }
 
         &.clip-path-img {
+            object-fit: cover;
             height: auto;
         }
     }

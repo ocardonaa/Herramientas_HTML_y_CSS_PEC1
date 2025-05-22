@@ -128,6 +128,7 @@ img.image-place {
   margin-top: 5%;
   margin-bottom: 0%; }
 img.clip-path-img {
+  object-fit: cover;
   height: auto; }
 
 div.dish-card {
