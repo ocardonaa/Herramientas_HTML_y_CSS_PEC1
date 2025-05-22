@@ -146,7 +146,6 @@ $secondary-color: #f2dfca;
 
 body {
     font-family: "Playwrite IT Moderna", cursive;
-    font-display: swap;
     font-weight: 400;
     background: linear-gradient(to bottom, $secondary-color, #fff);
     background-repeat: no-repeat;
@@ -190,6 +189,7 @@ svg {
 
 .blinking-chars-group .char {
     animation: blink 2s 1 forwards ease-in-out;
+    transform: scale();
 }
 
 /*preprocessor 3: nesting */
@@ -245,6 +245,11 @@ img {
 
         &.image-place {
             @include margin-percent-top-bottom(5%, 0%);
+        }
+
+        &.clip-path-img {
+            width: auto;
+            height: auto;
         }
     }
 }
@@ -378,7 +383,6 @@ figure {
 
             &.clip-path-img {
                 width: 80vw;
-                height: auto;
                 clip-path: circle(35% at 45% 30%);
                 @include margin-percent-top-bottom(10%, -35%);
             }
@@ -450,7 +454,6 @@ figure {
 
             &.clip-path-img {
                 width: 50vw;
-                height: auto;
                 clip-path: rect(0% 90% 80% 0% round 5%);
                 @include margin-percent-top-bottom(5%, -30%);
             }
@@ -474,10 +477,6 @@ figure {
 
             &.places-container {
                 @include centered-object();
-            }
-
-            &.text-bottom-luca {
-                @include margin-percent-top-bottom(10%, 0%);
             }
         }
     }
@@ -567,7 +566,6 @@ figure {
 
             &.clip-path-img {
                 width: 50vw;
-                height: auto;
                 clip-path: ellipse(40% 40% at 49% 40%);
                 @include margin-percent-top-bottom(5%, -10%);
             }

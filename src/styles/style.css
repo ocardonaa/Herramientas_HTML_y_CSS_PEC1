@@ -35,7 +35,6 @@
 
 body {
   font-family: "Playwrite IT Moderna", cursive;
-  font-display: swap;
   font-weight: 400;
   background: linear-gradient(to bottom, #f2dfca, #fff);
   background-repeat: no-repeat;
@@ -74,7 +73,8 @@ svg {
   display: inline; }
 
 .blinking-chars-group .char {
-  animation: blink 2s 1 forwards ease-in-out; }
+  animation: blink 2s 1 forwards ease-in-out;
+  transform: scale(); }
 
 /*preprocessor 3: nesting */
 span.my-name {
@@ -116,6 +116,9 @@ img.dishes-img {
 img.image-place {
   margin-top: 5%;
   margin-bottom: 0%; }
+img.clip-path-img {
+  width: auto;
+  height: auto; }
 
 div.dish-card {
   background-color: #930101;
@@ -208,7 +211,6 @@ figure {
 
   img.clip-path-img {
     width: 80vw;
-    height: auto;
     clip-path: circle(35% at 45% 30%);
     margin-top: 10%;
     margin-bottom: -35%; }
@@ -266,7 +268,6 @@ figure {
 
   img.clip-path-img {
     width: 50vw;
-    height: auto;
     clip-path: rect(0% 90% 80% 0% round 5%);
     margin-top: 5%;
     margin-bottom: -30%; }
@@ -283,9 +284,6 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center; }
-  div.text-bottom-luca {
-    margin-top: 10%;
-    margin-bottom: 0%; }
 
   p.dish-text {
     padding-left: 1em;
@@ -346,7 +344,6 @@ figure {
 
   img.clip-path-img {
     width: 50vw;
-    height: auto;
     clip-path: ellipse(40% 40% at 49% 40%);
     margin-top: 5%;
     margin-bottom: -10%; }
