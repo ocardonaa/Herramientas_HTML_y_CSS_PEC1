@@ -255,7 +255,6 @@ img {
             width: 100%;
             height: auto;
             object-fit: cover;
-            aspect-ratio: 1/1;
             @include margin-percent-top-bottom(5%, 0%);
         }
 
@@ -402,6 +401,7 @@ figure {
 
             &.image-place {
                 clip-path: rect(0% 100% 100% 0% round 5%);
+                aspect-ratio: 3/4;
             }
         }
     }
@@ -474,6 +474,7 @@ figure {
 
             &.image-place {
                 clip-path: rect(0% 100% 100% 0% round 5%);
+                aspect-ratio: 3/4;
             }
         }
     }
@@ -555,6 +556,7 @@ figure {
 
             img.image-place {
                 clip-path: xywh(0 1% 100% 95% round 10% 0);
+                aspect-ratio: 1/1;
             }
         }
 
@@ -567,6 +569,7 @@ figure {
 
             img.image-place {
                 clip-path: xywh(0 1% 100% 95% round 0 10%);
+                aspect-ratio: 1/1;
             }
         }
 
