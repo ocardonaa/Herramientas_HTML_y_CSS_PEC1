@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Historia Page</title>
   <link rel="preload" href="../img/places/napoles1.webp" as="image" type="image/webp">
+  <script defer src="../scripts/conditional-loading.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,7 +75,7 @@
             <source srcset="../img/optimized-places/napoles1-phone.webp" media="(max-width: 399px)" width="300"
               height="450">
             <img src="../img/places/napoles1.webp" class="image-place" data-aos-duration="1000" data-aos-delay="600"
-              data-aos="fade-left" alt="Img Naples 1" width="300" height="450" fetchpriority="high" loading="eager">
+              data-aos="fade-left" alt="Img Naples 1" width="300" height="450" id="naples1">
           </picture>
         </div>
       </div>
