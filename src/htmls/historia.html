@@ -5,12 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Historia Page</title>
-  <link rel="stylesheet" type="text/css" href="../styles/style.css">
-  <link rel="icon" href="../img/pizza.png" type="image/png">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+    onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap">
+  </noscript>
+  <link rel="preload" href="../img/luca/luca.webp" as="image" type="image/webp">
+  <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  </noscript>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="icon" href="../img/pizza.png" type="image/png">
 </head>
 
 <body>
@@ -47,14 +56,15 @@
       <div class="history-container">
         <div>
           <h2>
-            <svg width=100% height="100%" class="blinking-chars history-svg">
+            <svg width="300" height="200" viewBox="0 0 200 200" class="blinking-chars history-svg">
               <text text-anchor="middle" x="120%" y="50%" direction="ltr">
                 Orígenes
                 <animate attributeName="x" from="120%" to="50%" dur="2s" fill="freeze" />
               </text>
             </svg>
           </h2>
-          <p class="history-paragraf" id="firstText">En un rincón de Nápoles, un joven llamado Luca soñaba con compartir los sabores
+          <p class="history-paragraf" id="firstText">En un rincón de Nápoles, un joven llamado Luca soñaba con compartir
+            los sabores
             auténticos de su ciudad natal con el mundo. Desde pequeño, había ayudado a su abuela en la cocina, donde
             aprendió los secretos de la pizza <span lang="it">margherita</span> y la pasta <span lang="it">alla
               genovese</span>. Su pasión por la gastronomía creció con los años, y tras estudiar cocina y trabajar en
@@ -76,7 +86,7 @@
       <div class="history-container">
         <div>
           <h2>
-            <svg width=100% height="100%" class="blinking-chars history-svg">
+            <svg width="300" height="200" viewBox="0 0 200 200" class="blinking-chars history-svg">
               <text text-anchor="middle" x="-30%" y="50%" direction="ltr">
                 Nuestra tradición
                 <animate attributeName="x" from="-30%" to="50%" dur="2s" fill="freeze" />
@@ -104,7 +114,7 @@
       <div class="history-container">
         <div>
           <h2>
-            <svg width=100% height="100%" class="blinking-chars history-svg">
+            <svg width="300" height="200" viewBox="0 0 200 200" class="blinking-chars history-svg">
               <text text-anchor="middle" x="150%" y="50%" direction="ltr" class="special-text-phone">
                 La Napolitana actualmente
                 <animate attributeName="x" from="150%" to="50%" dur="2s" fill="freeze" />
@@ -133,7 +143,8 @@
       <p>Aqui un video sobre Italia</p>
       <figure>
         <iframe src="https://www.youtube-nocookie.com/embed/vqT7ADQmZ7o" loading="lazy" title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
         <figcaption>DREAMS OF ITALY | Venice | Travel | Architecture | Free HD Videos - no copyright</figcaption>
       </figure>
     </div>
