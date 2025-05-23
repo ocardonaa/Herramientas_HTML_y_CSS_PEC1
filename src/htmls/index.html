@@ -46,6 +46,20 @@
       text-align: center;
     }
 
+    a.menu-link:visited,
+    a.menu-link:link {
+      color: black;
+      text-decoration: none;
+      display: inline-block;
+      border-bottom: 0.15em solid #f2dfca;
+      transition: border-color 0.5s ease-out;
+    }
+
+    a.menu-link:hover {
+      color: #930101;
+      border-color: #930101;
+    }
+
     @media screen and (min-width: 800px) {
 
       main {
@@ -136,8 +150,8 @@
           <picture class="luca-picture">
             <source srcset="../img/luca/luca-desktop.webp" media="(min-width: 800px)" width="1200" height="900">
             <source srcset="../img/luca/luca-tablet.webp" media="(min-width: 400px) and (max-width: 799px)" width="600"
-              height="800">
-            <source srcset="../img/luca/luca-phone.webp" media="(max-width: 399px)" width="300" height="400">
+              height="900">
+            <source srcset="../img/luca/luca-phone.webp" media="(max-width: 399px)" width="300" height="450">
             <img class="clip-path-img" src="../img/luca/luca.webp" alt="Img Luca" width="300" height="400">
           </picture>
         </a>
