@@ -252,6 +252,10 @@ img {
         }
 
         &.image-place {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 1/1;
             @include margin-percent-top-bottom(5%, 0%);
         }
 
