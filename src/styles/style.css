@@ -161,9 +161,6 @@ div.luca-img {
   display: flex;
   justify-content: center;
   align-items: center; }
-div.index-text-div {
-  width: 100%;
-  height: auto; }
 
 form {
   margin-bottom: 3em; }

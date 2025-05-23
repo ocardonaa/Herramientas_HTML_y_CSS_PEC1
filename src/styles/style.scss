@@ -313,11 +313,6 @@ div {
         &.luca-img {
             @include centered-object();
         }
-
-        &.index-text-div {
-            width: 100%;
-            height: auto;
-        }
     }
 }
 
