@@ -193,7 +193,6 @@ h2 {
 svg {
     fill: $primary-color;
     display: inline;
-    @include min-width-height(fit-content, fit-content);
 }
 
 .blinking-chars-group .char {
