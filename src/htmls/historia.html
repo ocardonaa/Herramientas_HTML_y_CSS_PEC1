@@ -8,8 +8,14 @@
   <link rel="preload" href="../img/places/napoles1.jpg" as="image" type="image/jpg">
   <link rel="preload" href="../img/optimized-places/napoles1-desktop.webp" as="image" type="image/webp">
   <link rel="preload" href="../styles/style.css" as="style" onload="this.rel='stylesheet'">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+    onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap">
+  </noscript>
   <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -76,7 +82,7 @@
             <source srcset="../img/optimized-places/napoles1-phone.webp" media="(max-width: 399px)" width="300"
               height="450">
             <img src="../img/places/napoles1.jpg" class="image-place" data-aos-duration="1000" data-aos-delay="600"
-              data-aos="fade-left" alt="Img Naples 1" width="300" height="450">
+              data-aos="fade-left" alt="Img Naples 1" width="300" height="450" loading="eager">
           </picture>
         </div>
       </div>
