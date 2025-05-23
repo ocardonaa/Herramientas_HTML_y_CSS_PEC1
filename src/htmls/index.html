@@ -35,11 +35,9 @@
       background-color: #930101;
     }
 
-    h1 {
-      color: #930101;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    svg {
+      fill: #930101;
+      display: inline;
     }
 
     h2 {
@@ -54,6 +52,11 @@
         padding-left: 25%;
         padding-right: 25%;
       }
+
+      ul.nav-ul {
+        display: block;
+        text-align: center;
+      }
     }
 
     @media screen and (min-width: 400px) and (max-width: 799px) {
@@ -62,13 +65,27 @@
         padding-left: 10%;
         padding-right: 10%;
       }
+
+      ul.nav-ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
     }
 
     @media screen and (max-width: 399px) {
-      
+
       main {
         padding-left: 10%;
         padding-right: 10%;
+      }
+
+      ul.nav-ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   </style>
