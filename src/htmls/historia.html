@@ -5,11 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Historia Page</title>
-  <link rel="preload" href="../img/places/napoles1.jpg" as="image" type="image/jpg">
-  <link rel="preload" href="../styles/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="../styles/style.css">
-  </noscript>
+  <link rel="preload" href="../img/optimized-places/napoles1-desktop.webp" as="image" type="image/jpg" fetchpriority="high">
+  <link rel="stylesheet" href="../styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
@@ -82,7 +79,7 @@
             <source srcset="../img/optimized-places/napoles1-phone.webp" media="(max-width: 399px)" width="300"
               height="450">
             <img src="../img/places/napoles1.jpg" class="image-place" data-aos-duration="1000" data-aos-delay="600"
-              data-aos="fade-left" alt="Img Naples 1" width="300" height="450" fetchpriority="high">
+              data-aos="fade-left" alt="Img Naples 1" width="300" height="450" fetchpriority="high" loading="eager">
           </picture>
         </div>
       </div>
@@ -165,3 +162,4 @@
 </body>
 
 </html>
+
