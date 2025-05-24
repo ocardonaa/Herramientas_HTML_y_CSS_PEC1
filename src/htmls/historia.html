@@ -8,12 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="../styles/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <script src="../scripts/conditional-loading.js"></script>
   <link rel="preload" href="../img/optimized-places/napoles1-desktop.webp" as="image" type="image/webp">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap">
   <link rel="stylesheet" href="../styles/style.css">
   <link rel="icon" href="../img/pizza.png" type="image/png">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-  <script defer src="../scripts/conditional-loading.js"></script>
 </head>
 
 <body>
@@ -142,10 +143,10 @@
     <div class="video-div">
       <p>Aqui un video sobre Italia</p>
       <figure>
-        <iframe src="https://www.youtube-nocookie.com/embed/vqT7ADQmZ7o" loading="lazy" fetchpriority="low"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vqT7ADQmZ7o?si=YehKr-AO9UA2A50l"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy" fetchpriority="high");></iframe>
         <figcaption>DREAMS OF ITALY | Venice | Travel | Architecture | Free HD Videos - no copyright</figcaption>
       </figure>
     </div>
@@ -158,15 +159,4 @@
 </body>
 
 </html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Fast Render Paragraph</title>
-
-<!-- Preload font for faster load -->
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-
+  
