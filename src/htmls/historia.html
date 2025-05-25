@@ -10,28 +10,6 @@
 <link rel="preconnect" href="https://unpkg.com">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 <link rel="icon" href="../img/pizza.png" type="image/png">
-<script>
-  function applyConditionalLazyLoading() {
-    const isPhone = window.matchMedia("(max-width: 799px)").matches;
-    const firstImage = document.getElementById('naples1');
-    const firstText = document.getElementById("firstText");
-    if (isPhone) {
-      firstImage.setAttribute("loading", "lazy");
-      firstText.setAttribute("fetchpriority", "high");
-    }
-    else {
-      firstImage.setAttribute("fetchpriority", "high");
-      firstImage.setAttribute("loading", "eager");
-    }
-  }
-  applyConditionalLazyLoading();
-
-  let resizeTimeout;
-  window.addEventListener("resize", () => {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(applyConditionalLazyLoading, 1);
-  });
-</script>
 <header>
   <h1><svg width=100% height=100% class=blinking-chars><text text-anchor=middle x=50% y=50% class=blinking-chars-group>
         <tspan class=char dy=0>La Napolitana</tspan>
@@ -50,6 +28,28 @@
   <div class=main-history-container>
     <div class=history-container>
       <div>
+        <script>
+          function applyConditionalLazyLoading() {
+            const isPhone = window.matchMedia("(max-width: 799px)").matches;
+            const firstImage = document.getElementById('naples1');
+            const firstText = document.getElementById("firstText");
+            if (isPhone) {
+              firstImage.setAttribute("loading", "lazy");
+              firstText.setAttribute("fetchpriority", "high");
+            }
+            else {
+              firstImage.setAttribute("fetchpriority", "high");
+              firstImage.setAttribute("loading", "eager");
+            }
+          }
+          applyConditionalLazyLoading();
+
+          let resizeTimeout;
+          window.addEventListener("resize", () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(applyConditionalLazyLoading, 1);
+          });
+        </script>
         <h2><svg width=300 height=200 viewBox="0 0 200 200" class="blinking-chars history-svg"><text text-anchor=middle
               x=120% y=50% direction=ltr>Orígenes
               <animate attributeName=x from=120% to=50% dur=2s fill=freeze />
