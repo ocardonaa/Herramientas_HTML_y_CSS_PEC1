@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Historia Page</title>
+  <link rel="stylesheet" href="../styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" fetchpriority="high"
     href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap">
-  <link rel="preload" fetchpriority="high" href="../img/optimized-places/napoles1-desktop.webp" as="image" type="image/png">
+  <link rel="preload" fetchpriority="high" as="image" href="../img/optimized-places/napoles1-desktop.webp" type="image/webp">
   <script>
     function applyConditionalLazyLoading() {
       const isPhone = window.matchMedia("(max-width: 799px)").matches;
@@ -32,7 +33,6 @@
       resizeTimeout = setTimeout(applyConditionalLazyLoading, 1);
     });
   </script>
-  <link rel="stylesheet" href="../styles/style.css">
   <link rel="icon" href="../img/pizza.png" type="image/png">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
