@@ -117,8 +117,6 @@ img.dishes-img {
   aspect-ratio: 1/1;
   width: 100%; }
 img.image-place {
-  width: 100%;
-  height: auto;
   object-fit: cover;
   margin-top: 5%;
   margin-bottom: 0%; }
