@@ -26,9 +26,6 @@
                 firstImage.setAttribute("fetchpriority", "high");
                 secondImage.setAttribute("fetchpriority", "high");
             }
-            else {
-                firstImage.setAttribute("loading", "lazy");
-            }
         }
         applyConditionalLazyLoading();
         window.addEventListener("resize", () => {
@@ -65,7 +62,7 @@
                                 media="(min-width: 400px) and (max-width: 799px)">
                             <source srcset="../img/optimized-dishes/food1-phone.webp" media="(max-width: 399px)"><img
                                 class="image-white-gradient dishes-img" src="../img/dishes/food1.jpg"
-                                alt="Img Macarrones Bolonyesa" id="bolonyesa">
+                                alt="Img Macarrones Bolonyesa" id="bolonyesa" loading="lazy">
                         </picture>
                     </div>
                     <div class="back-card">
@@ -88,7 +85,7 @@
                                 media="(min-width: 400px) and (max-width: 799px)">
                             <source srcset="../img/optimized-dishes/food2-phone.webp" media="(max-width: 399px)"><img
                                 class="image-white-gradient dishes-img" src="../img/dishes/food2.jpg"
-                                alt="Img Espagueti con albondigas" id="meatballs">
+                                alt="Img Espagueti con albondigas" id="meatballs" loading="lazy">
                         </picture>
                     </div>
                     <div class="back-card">

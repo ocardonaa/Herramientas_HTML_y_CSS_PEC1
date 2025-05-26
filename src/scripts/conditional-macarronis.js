@@ -11,9 +11,6 @@ function applyConditionalLazyLoading() {
         firstImage.setAttribute("fetchpriority", "high");
         secondImage.setAttribute("fetchpriority", "high");
     }
-    else {
-        firstImage.setAttribute("loading", "lazy");
-    }
 }
 applyConditionalLazyLoading();
 window.addEventListener("resize", () => {
