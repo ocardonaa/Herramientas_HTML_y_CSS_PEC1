@@ -112,6 +112,8 @@ nav.menu-navigation {
 img.image-white-gradient:hover {
   animation: shrink 1s ease forwards; }
 img.dishes-img {
+  width: 100%;
+  height: auto;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
   aspect-ratio: 1/1; }
