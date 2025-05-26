@@ -36,7 +36,8 @@
     clip-path: rect(5% 95% 100% 5% round 20%); } }
 /* general classes */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Playwrite IT Moderna', cursive; }
 
 body {
   font-weight: 400;
