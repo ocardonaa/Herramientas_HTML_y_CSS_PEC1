@@ -5,13 +5,6 @@ $secondary-color: #f2dfca;
 /*preprocessor 2: mixins */
 /* mixins to optimize zone */
 
-@font-face {
-    font-family: 'Playwrite IT Moderna';
-    src: url('../font/static/PlaywriteITModerna-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
 @mixin centered-object {
     display: flex;
     justify-content: center;
