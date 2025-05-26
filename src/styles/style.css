@@ -223,9 +223,6 @@ figure {
   img.image-place {
     clip-path: rect(0% 100% 100% 0% round 5%);
     aspect-ratio: 3/4; }
-  img.dishes-img {
-    width: 300px;
-    height: 300px; }
 
   div.menu-food-container {
     display: flex;
@@ -285,9 +282,6 @@ figure {
   img.image-place {
     clip-path: rect(0% 100% 100% 0% round 5%);
     aspect-ratio: 3/4; }
-  img.dishes-img {
-    width: 350px;
-    height: 350px; }
 
   div.menu-food-container {
     display: grid;
@@ -368,9 +362,6 @@ figure {
     margin-top: 5%;
     margin-bottom: -10%;
     aspect-ratio: 4/3; }
-  img.dishes-img {
-    width: 400px;
-    height: 400px; }
 
   iframe {
     height: calc(100vw/3.5); }
