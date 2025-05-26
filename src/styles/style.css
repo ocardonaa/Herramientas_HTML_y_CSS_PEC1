@@ -1,6 +1,11 @@
 /*preprocessor 1: variables */
 /*preprocessor 2: mixins */
 /* mixins to optimize zone */
+@font-face {
+  font-family: 'Playwrite IT Moderna';
+  src: url("../font/static/PlaywriteITModerna-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
 @keyframes blink {
   from {
     opacity: 0; }
@@ -34,7 +39,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Playwrite IT Moderna", cursive;
+  font-family: 'Playwrite IT Moderna', cursive;
   font-weight: 400;
   font-display: swap;
   background: linear-gradient(to bottom, #f2dfca, #fff);
