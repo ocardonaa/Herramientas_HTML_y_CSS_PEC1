@@ -3,6 +3,7 @@ function applyConditionalLazyLoading() {
     const isTablet = window.matchMedia("(min-width: 400px) and (max-width: 799px)")
     const firstImage = document.getElementById('bolonyesa');
     const secondImage = document.getElementById('meatballs');
+    
     if (isPhone) {
         firstImage.setAttribute("fetchpriority", "high");
     }
