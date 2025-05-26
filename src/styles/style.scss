@@ -248,8 +248,6 @@ img {
         &.dishes-img {
             @include top-borders();
             aspect-ratio: 1/1;
-            width: 100%;
-            height: auto;
         }
 
         &.image-place {

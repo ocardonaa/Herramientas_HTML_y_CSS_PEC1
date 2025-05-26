@@ -114,9 +114,7 @@ img.image-white-gradient:hover {
 img.dishes-img {
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
-  aspect-ratio: 1/1;
-  width: 100%;
-  height: auto; }
+  aspect-ratio: 1/1; }
 img.image-place {
   object-fit: cover;
   margin-top: 5%;
