@@ -249,6 +249,7 @@ img {
             @include top-borders();
             aspect-ratio: 1/1;
             width: 100%;
+            height: auto;
         }
 
         &.image-place {
@@ -401,6 +402,12 @@ figure {
                 clip-path: rect(0% 100% 100% 0% round 5%);
                 aspect-ratio: 3/4;
             }
+
+            &.dishes-img {
+                width: 300px;
+                height: 300px;
+            }
+
         }
     }
 
@@ -473,6 +480,11 @@ figure {
             &.image-place {
                 clip-path: rect(0% 100% 100% 0% round 5%);
                 aspect-ratio: 3/4;
+            }
+
+            &.dishes-img {
+                width: 350px;
+                height: 350px;
             }
         }
     }
@@ -588,6 +600,11 @@ figure {
                 clip-path: ellipse(40% 40% at 49% 40%);
                 @include margin-percent-top-bottom(5%, -10%);
                 aspect-ratio: 4/3;
+            }
+
+            &.dishes-img {
+                width: 400px;
+                height: 400px;
             }
         }
     }
