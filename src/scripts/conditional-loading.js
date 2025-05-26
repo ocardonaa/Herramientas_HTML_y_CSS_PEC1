@@ -1,10 +1,8 @@
 function applyConditionalLazyLoading() {
-    const isPhone = window.matchMedia("(max-width: 799px)").matches;
+    const isPhone = window.matchMedia("(max-width: 399px)").matches;
     const firstImage = document.getElementById('naples1');
-    const firstText = document.getElementById("firstText");
     if (isPhone) {
         firstImage.setAttribute("loading", "lazy");
-        firstText.setAttribute("fetchpriority", "high");
     }
     else {
         firstImage.setAttribute("fetchpriority", "high");
