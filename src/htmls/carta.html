@@ -180,7 +180,30 @@
         </div>
     </main>
     <footer><span class="my-name">Oriol Cardona Alsina</span></footer>
-    <script defer src="../scripts/conditional-macarronis.js"></script>
+    <script>function applyConditionalLazyLoading() {
+            const isPhone = window.matchMedia("(max-width: 399px)").matches;
+            const isTablet = window.matchMedia("(min-width: 400px) and (max-width: 799px)")
+            const firstImage = document.getElementById('bolonyesa');
+            const secondImage = document.getElementById('meatballs');
+
+            if (isPhone) {
+                firstImage.setAttribute("fetchpriority", "high");
+            }
+            else if (isTablet) {
+                firstImage.setAttribute("fetchpriority", "high");
+                secondImage.setAttribute("fetchpriority", "high");
+            }
+            else {
+                firstImage.setAttribute("loading", "lazy");
+            }
+        }
+        applyConditionalLazyLoading();
+
+        let resizeTimeout;
+        window.addEventListener("resize", () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(applyConditionalLazyLoading, 1);
+        });</script>
     <script async src="../scripts/card-flip.js"></script>
 </body>
 
