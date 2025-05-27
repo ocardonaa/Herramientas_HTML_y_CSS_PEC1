@@ -99,8 +99,21 @@
   <div class=video-div>
     <p>Aqui un video sobre Italia
     <figure>
-      <img src="../img/italy_img.png" alt="Video thumbnail" loading="lazy" class="img-video">
+      <img src="../img/italy_img.png" alt="Video thumbnail" loading="lazy" onclick="loadVideo(this, 'vqT7ADQmZ7o')"
+        class="img-video">
       <figcaption>DREAMS OF ITALY | Venice | Travel | Architecture | Free HD Videos - no copyright</figcaption>
+      <script>
+        function loadVideo(el, videoId) {
+          const iframe = document.createElement('iframe');
+          iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+          iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+          iframe.setAttribute('allowfullscreen', '');
+          iframe.style.border = 'none';
+          iframe.style.width = '100%';
+          iframe.classList.add("videoHeight");
+          el.parentNode.replaceChild(iframe, el);
+        }
+      </script>
     </figure>
   </div>
 

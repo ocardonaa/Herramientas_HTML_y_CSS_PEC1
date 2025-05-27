@@ -194,6 +194,9 @@ figure {
   margin: 0;
   padding: 0;
   position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
   display: block;
   text-align: center; }
   figure iframe {
@@ -248,7 +251,7 @@ figure {
     padding-right: 1em;
     font-size: 0.8em; }
 
-  iframe {
+  iframe.videoHeight {
     height: calc(100vw/2.1); }
 
   .history-svg {
@@ -312,7 +315,7 @@ figure {
   p.history-paragraf {
     font-size: 1em; }
 
-  iframe {
+  iframe.videoHeight {
     height: calc(100vw/2); }
 
   .history-svg {
@@ -367,6 +370,8 @@ figure {
     div.history-container p.history-paragraf {
       font-size: 1rem; }
 
+  img.img-video {
+    width: 90%; }
   img.clip-path-img {
     width: 50vw;
     clip-path: ellipse(40% 40% at 49% 40%);
@@ -374,7 +379,7 @@ figure {
     margin-bottom: -10%;
     aspect-ratio: 4/3; }
 
-  iframe {
+  iframe.videoHeight {
     height: calc(100vw/3.5); }
 
   div.main-container-contact-form {
