@@ -28,7 +28,7 @@
               x=120% y=50% direction=ltr>Orígenes
               <animate attributeName=x from=120% to=50% dur=2s fill=freeze />
             </text></svg></h2>
-        <p class=history-paragraf style="font-display: swap;">En un rincón de Nápoles, un joven llamado Luca soñaba con
+        <p class=history-paragraf>En un rincón de Nápoles, un joven llamado Luca soñaba con
           compartir los
           sabores auténticos de su ciudad natal con el mundo. Desde pequeño, había ayudado a su abuela en la cocina,
           donde aprendió los secretos de la pizza <span lang=it>margherita</span> y la pasta <span lang=it>alla
@@ -54,7 +54,7 @@
               x=-30% y=50% direction=ltr>Nuestra tradición
               <animate attributeName=x from=-30% to=50% dur=2s fill=freeze />
             </text></svg></h2>
-        <p class=history-paragraf fetchpriority=high>El local, modesto pero acogedor, se convirtió rápidamente en un
+        <p class=history-paragraf>El local, modesto pero acogedor, se convirtió rápidamente en un
           refugio para los
           amantes de la buena comida. Luca no solo ofrecía platos típicos como la pizza de mariscos o la <span
             lang=it>sfogliatella</span>, sino que también compartía historias de su infancia y las tradiciones que
@@ -102,7 +102,15 @@
       <img src="../img/italy_img.png" alt="Video thumbnail" loading="lazy" onclick="loadVideo(this, 'vqT7ADQmZ7o')"
         class="img-video">
       <figcaption>DREAMS OF ITALY | Venice | Travel | Architecture | Free HD Videos - no copyright</figcaption>
-      <script>
+    </figure>
+  </div>
+
+</main>
+<footer><span class=my-name>Oriol Cardona Alsina</span></footer>
+<script defer src="../scripts/conditional-loading.js"></script>
+<script defer src="../scripts/aos.js"></script>
+<script defer src="../scripts/startAOS.js"></script>
+<script>
         function loadVideo(el, videoId) {
           const iframe = document.createElement('iframe');
           iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
@@ -114,12 +122,4 @@
           el.parentNode.replaceChild(iframe, el);
         }
       </script>
-    </figure>
-  </div>
-
-</main>
-<footer><span class=my-name>Oriol Cardona Alsina</span></footer>
-<script defer src="../scripts/conditional-loading.js"></script>
-<script defer src="../scripts/aos.js"></script>
-<script defer src="../scripts/startAOS.js"></script>
 </body>
