@@ -365,6 +365,7 @@ figure {
     margin: 0;
     padding: 0;
     position: relative;
+    @include centered-text();
 
     iframe {
         border: none;
@@ -409,6 +410,10 @@ figure {
             &.image-place {
                 clip-path: rect(0% 100% 100% 0% round 5%);
                 aspect-ratio: 3/4;
+            }
+
+            &.img-video {
+                width: 100%;
             }
         }
     }
@@ -482,6 +487,10 @@ figure {
             &.image-place {
                 clip-path: rect(0% 100% 100% 0% round 5%);
                 aspect-ratio: 3/4;
+            }
+
+            &.img-video {
+                width: 90%;
             }
         }
     }

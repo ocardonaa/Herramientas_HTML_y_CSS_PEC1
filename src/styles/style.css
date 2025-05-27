@@ -193,7 +193,9 @@ form {
 figure {
   margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  display: block;
+  text-align: center; }
   figure iframe {
     border: none;
     width: 100%; }
@@ -228,6 +230,8 @@ figure {
   img.image-place {
     clip-path: rect(0% 100% 100% 0% round 5%);
     aspect-ratio: 3/4; }
+  img.img-video {
+    width: 100%; }
 
   div.menu-food-container {
     display: flex;
@@ -287,6 +291,8 @@ figure {
   img.image-place {
     clip-path: rect(0% 100% 100% 0% round 5%);
     aspect-ratio: 3/4; }
+  img.img-video {
+    width: 90%; }
 
   div.menu-food-container {
     display: grid;
