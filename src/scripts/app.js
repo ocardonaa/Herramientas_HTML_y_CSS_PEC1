@@ -1,5 +1,4 @@
 console.log('Web started');
-import "@fontsource/playwrite-it-moderna";
 
 const hasNativeLazyLoadSupport = 'loading' in HTMLImageElement.prototype
 if (hasNativeLazyLoadSupport) {

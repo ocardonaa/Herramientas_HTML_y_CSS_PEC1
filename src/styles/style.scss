@@ -99,47 +99,47 @@ $secondary-color: #f2dfca;
 
 @keyframes shrink {
     0% {
-        clip-path: rect(0% 100% 100% 0% round 0%);
+        clip-path: inset(2% round 0%);
     }
 
     10% {
-        clip-path: rect(0.5% 99.5% 100% 0.5% round 5%);
+        clip-path: inset(3% round 0%);
     }
 
     20% {
-        clip-path: rect(1% 99% 100% 1% round 5%);
+        clip-path: inset(3% round 1%);
     }
 
     30% {
-        clip-path: rect(1.5% 98.5% 100% 1.5% round 10%);
+        clip-path: inset(4% round 1%);
     }
 
     40% {
-        clip-path: rect(2% 98% 100% 2% round 10%);
+        clip-path: inset(4% round 2%);
     }
 
     50% {
-        clip-path: rect(2.5% 97.5% 100% 2.5% round 15%);
+        clip-path: inset(5% round 2%);
     }
 
     60% {
-        clip-path: rect(3% 97% 100% 3% round 15%);
+        clip-path: inset(5% round 3%);
     }
 
     70% {
-        clip-path: rect(3.5% 96.5% 100% 3.5% round 15%);
+        clip-path: inset(6% round 3%);
     }
 
     80% {
-        clip-path: rect(4% 96% 100% 4% round 20%);
+        clip-path: inset(6% round 4%);
     }
 
     90% {
-        clip-path: rect(4.5% 95.5% 100% 4.5% round 20%);
+        clip-path: inset(7% round 4%);
     }
 
     100% {
-        clip-path: rect(5% 95% 100% 5% round 20%);
+        clip-path: inset(7% round 5%);
     }
 }
 
@@ -160,7 +160,6 @@ $secondary-color: #f2dfca;
 body {
     font-family: 'Playwrite IT Moderna';
     font-weight: 400;
-    font-display: swap;
     background: linear-gradient(to bottom, $secondary-color, #fff);
     background-repeat: no-repeat;
     margin: 0;
@@ -411,7 +410,7 @@ figure {
             }
 
             &.image-place {
-                clip-path: rect(0% 100% 100% 0% round 5%);
+                clip-path: inset(5% round 5%);
                 aspect-ratio: 3/4;
             }
 
@@ -482,13 +481,13 @@ figure {
 
             &.clip-path-img {
                 width: 50vw;
-                clip-path: rect(0% 90% 80% 0% round 5%);
+                clip-path: inset(0 10% 20% 0 round 5%);
                 @include margin-percent-top-bottom(5%, -30%);
                 aspect-ratio: 3/4;
             }
 
             &.image-place {
-                clip-path: rect(0% 100% 100% 0% round 5%);
+                clip-path: inset(0 0 0 0 round 5%);
                 aspect-ratio: 3/4;
             }
 
@@ -578,7 +577,7 @@ figure {
             }
 
             img.image-place {
-                clip-path: xywh(0 1% 100% 95% round 10% 0);
+                clip-path: inset(0 0 0 0 round 10% 0);
                 aspect-ratio: 1/1;
             }
         }
@@ -591,7 +590,7 @@ figure {
             }
 
             img.image-place {
-                clip-path: xywh(0 1% 100% 95% round 0 10%);
+                clip-path: inset(0 0 0 0 round 0 10%);
                 aspect-ratio: 1/1;
             }
         }
